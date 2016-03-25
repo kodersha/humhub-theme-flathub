@@ -1687,7 +1687,7 @@ a.list-group-item:hover, a.list-group-item.active, a.list-group-item.active:hove
     border: none;
 }
 .modal h1, .modal h2, .modal h3, .modal h4, .modal h5 {
-    margin-top: 20px;
+    margin: 0;
     color: #555;
     font-weight: 300;
 }
@@ -1748,6 +1748,13 @@ a.list-group-item:hover, a.list-group-item.active, a.list-group-item.active:hove
     margin: 0 0 55px;
     font-size: 65px;
     display: block;
+}
+.jcrop-holder {
+	width: 100% !important;
+	background-color: #fafafa;
+}
+.jcrop-holder img, img.jcrop-preview {
+	width: 100% !important;
 }
 a.more-link-post {
 	color: #dadada !important;

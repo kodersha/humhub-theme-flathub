@@ -97,6 +97,22 @@ a.label-default:hover {
 .nav-tabs .dropdown-menu li.selected {
 	background-color: #2f2f2f!important;
 }
+.modal-content {
+	background-color: #333;
+}
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4,
+.modal h5 {
+	color: #fff;
+}
+.close {
+	color: #fff;
+}
+.jcrop-holder {
+	background-color: #444;
+}
 #space-menu-spaces strong {
 	color: #fff;
 }
