@@ -142,6 +142,9 @@ a.label-default:hover {
 .panel .statistics .entry .count {
 	color: #fdfdfd;
 }
+.slider #featured {
+	background: #333;
+}
 .well {
 	background-color: #2f2f2f;
 }
