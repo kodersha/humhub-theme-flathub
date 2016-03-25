@@ -4,7 +4,7 @@
 
 <!-- COLOR uncomment for use -->
 
-<link href="<?php echo $this->theme->getBaseUrl() . '/css/dark.css'; ?>" rel="stylesheet">
+<!-- <link href="<?php echo $this->theme->getBaseUrl() . '/css/dark.css'; ?>" rel="stylesheet"> -->
 
 <!-- OTHER -->
 
