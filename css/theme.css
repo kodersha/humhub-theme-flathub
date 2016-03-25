@@ -493,6 +493,7 @@ form.dropdown-controls {
 }
 #space-menu-spaces p {
 	color: #7a7a7a;
+    padding: 0 0 5px;	
 }
 #space-menu-dropdown .media>.pull-left {
 	width: 48px !important;
@@ -523,6 +524,9 @@ form.dropdown-controls {
     top: 0;
     margin: -10px 0 0 -10px;
     z-index: 1;
+}
+#dropdown-notifications {
+	
 }
 @media screen and (max-width:768px) {
     #topbar-second #space-menu-dropdown .media-list, #topbar-second #search-menu-dropdown .media-list {
