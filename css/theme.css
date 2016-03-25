@@ -595,6 +595,9 @@ form.dropdown-controls {
     margin: 0;
     font-weight: 400;
 }
+.search-reset {
+    display: none;
+}
 .dropdown-menu {
 	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.1);
 	-moz-box-shadow: 0 3px 5px rgba(0,0,0,.1);
@@ -1082,7 +1085,7 @@ form.dropdown-controls {
 }
 .well hr {
     margin: 0 0 25px;
-    border-top: 1px solid #EEF1F4;
+    border-top: 1px solid #f5f5f5;
 }
 .well .comm:first-child {
 	margin: 15px 0 0;
