@@ -132,6 +132,9 @@ a.label-default:hover {
 #space-search-reset:hover .fa {
 	color: #2f2f2f;
 }
+#space-menu-dropdown:before {
+	border-color-bottom: #2f2f2f;
+}
 .topbar .dropdown-header {
 	background: #2f2f2f;
 	color: #fff;

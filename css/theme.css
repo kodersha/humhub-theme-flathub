@@ -489,7 +489,7 @@ form.dropdown-controls {
     overflow: auto;
 }
 #space-menu-spaces strong {
-	font-size: 18px;
+	font-size: 16px;
     font-family: "PT Sans";
 }
 #space-menu-spaces p {
@@ -507,6 +507,23 @@ form.dropdown-controls {
 }
 #space-menu-dropdown .divider {
 	margin: 10px 0 0;
+}
+#space-menu-dropdown {
+    margin: 0 0 0 -150px !important;
+}
+#space-menu-dropdown:before {
+	content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    left: 50%;
+    top: 0;
+    margin: -10px 0 0 -10px;
+    z-index: 1;
 }
 @media screen and (max-width:768px) {
     #topbar-second #space-menu-dropdown .media-list, #topbar-second #search-menu-dropdown .media-list {
