@@ -117,18 +117,8 @@ h4 {
 }
 .content {
     font-family: "PT Sans";
-    font-size: 20px;
-    line-height: 28px;
-}
-@media screen and (max-width:768px) {
-	.content {
-		font-size: 16px;
-		line-height: 1.4;
-	}
-	.comment .content {
-		font-size: 16px;
-		line-height: 1.4;
-	}
+    font-size: 16px;
+    line-height: 1.4;
 }
 .text-center {
     text-align: center !important;
