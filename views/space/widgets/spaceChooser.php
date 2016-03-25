@@ -11,7 +11,7 @@ $this->registerJsVar('scSpaceListUrl', Url::to(['/space/list', 'ajax' => 1]));
 ?>
 
 <li class="dropdown">
-    <a href="#" id="space-menu" class="dropdown-toggle" data-toggle="dropdown">
+    <a href="#" id="space-menu" class="dropdown-toggle tt" data-toggle="dropdown" data-toggle="tooltip" data-placement="bottom" data-original-title="<?php if (!$currentSpace) { echo '' . Yii::t('SpaceModule.widgets_views_spaceChooser', 'My spaces'); } ?>">
         <!-- start: Show space image and name if chosen -->
         <?php if ($currentSpace) { ?>
             <?php echo \humhub\modules\space\widgets\Image::widget([
