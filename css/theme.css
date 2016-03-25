@@ -493,7 +493,7 @@ form.dropdown-controls {
 }
 #space-menu-spaces p {
 	color: #7a7a7a;
-    padding: 0 0 5px;	
+    padding: 0 0 2px;	
 }
 #space-menu-dropdown .media>.pull-left {
 	width: 48px !important;
@@ -503,7 +503,7 @@ form.dropdown-controls {
 	padding: 10px 10px 2px;
 }
 #space-menu-dropdown .media-body {
-	padding: 2px 0 0 10px;
+	padding: 6px 0 0 10px;
 }
 #space-menu-dropdown .divider {
 	margin: 10px 0 0;
