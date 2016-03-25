@@ -508,7 +508,7 @@ form.dropdown-controls {
 	margin: 10px 0 0;
 }
 #space-menu-dropdown {
-    margin: 0 0 0 -150px !important;
+    margin: -1px 0 0 -150px !important;
 }
 #space-menu-dropdown:before {
 	content: '';
