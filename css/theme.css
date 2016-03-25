@@ -2008,6 +2008,7 @@ ul.tag_input li img {
     font-size: 12px;
     cursor: pointer;
 	margin: 0 0 25px;
+	text-align: center;
 }
 .wall-entry-controls, .wall-entry-controls a {
     font-size: 11px;
