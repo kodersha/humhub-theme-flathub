@@ -1074,6 +1074,9 @@ form.dropdown-controls {
     margin: 0 0 25px;
     border-top: 1px solid #EEF1F4;
 }
+.well .comm:first-child {
+	margin: 15px 0 0;
+}
 .well .comm:last-child hr {
 	border: 0;
 	margin: 0 0 35px;
