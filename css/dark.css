@@ -110,6 +110,9 @@ a.label-default:hover {
 .close {
 	color: #fff;
 }
+.close:hover {
+	color: #ccc;
+}
 .jcrop-holder {
 	background-color: #444;
 }
