@@ -1855,9 +1855,6 @@ table td a:hover {
     position: relative !important;
     margin: 0 0 20px;
 }
-.comment .content {
-	font-size: 16px;
-}
 .comment .media .nav-pills.preferences {
     display: none;
     right: -3px;
