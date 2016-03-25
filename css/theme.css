@@ -1750,11 +1750,11 @@ a.list-group-item:hover, a.list-group-item.active, a.list-group-item.active:hove
     display: block;
 }
 .jcrop-holder {
-	width: 100% !important;
 	background-color: #fafafa;
-}
-.jcrop-holder img, img.jcrop-preview {
-	width: 100% !important;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	margin: 0 auto;
 }
 a.more-link-post {
 	color: #dadada !important;
