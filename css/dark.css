@@ -165,6 +165,9 @@ a.label-default:hover {
 	background: #2f2f2f;
 	color: #fff;
 }
+.panel-light .panel-heading {
+	background: #333;
+}
 .panel-tour .panel-heading {
 	background: #424B5F;
 }
