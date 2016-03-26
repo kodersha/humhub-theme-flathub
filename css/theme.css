@@ -302,7 +302,7 @@ form.dropdown-controls {
     z-index: 3;
 }
 #topbar-first .topbar-actions .dropdown-menu {
-	margin: 10px 0;
+	margin: 10px 5px 0 0;
 }
 #topbar-first .topbar-actions .dropdown-menu:before {
     content: '';
