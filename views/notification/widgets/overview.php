@@ -23,7 +23,7 @@ use yii\helpers\Url;
 		<?php echo \humhub\widgets\TopMenuRightStack::widget(); ?>
 	</ul>
 
-    <a href="#" id="icon-notifications" class="tt" data-toggle="dropdown" data-toggle="dropdown" data-placement="bottom" data-original-title="<?php echo Yii::t('NotificationModule.widgets_views_list', 'Notifications'); ?>" >
+    <a href="#" id="icon-notifications" class="tt" data-toggle="dropdown" data-placement="bottom" data-original-title="<?php echo Yii::t('NotificationModule.widgets_views_list', 'Notifications'); ?>" >
         <i class="fa fa-bell"></i>
     </a>
     <span id="badge-notifications" style="display:none;" class="label label-danger label-notifications">1</span>
