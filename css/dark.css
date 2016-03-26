@@ -393,6 +393,17 @@ ul.tag_input {
 .popover.left>.arrow:after {
 	border-left-color: #333;
 }
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	color: #fff;
+    background-color: #2f2f2f;
+	border-bottom-color: transparent;
+	border-color: #2f2f2f;
+}
+#profile-form-container .nav-tabs {
+	border-bottom-color: #2f2f2f;
+}
 #switchform a:first-child {
 	margin: 8px 15px 0 0;
 	display: block;
