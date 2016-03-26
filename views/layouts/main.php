@@ -93,11 +93,13 @@ AppAsset::register($this);
                 <?php echo \humhub\widgets\SiteLogo::widget(); ?>
             </div>
 
-            <div class="topbar-actions pull-right no-icons">
-                <?php echo \humhub\modules\user\widgets\AccountTopMenu::widget(); ?>
+            <div class="topbar-actions pull-right">
+				<div class="no-icons">
+					<?php echo \humhub\modules\user\widgets\AccountTopMenu::widget(); ?>
+				</div>
 				<form id="switchform">
-					<input type="radio" name="choice" value="none" onClick="chooseStyle(this.value, 60)"><br />
-					<input type="radio" name="choice" value="dark-theme" onClick="chooseStyle(this.value, 60)">
+					<a href="javascript:chooseStyle('none', 60)" checked="checked"><i class="fa fa-sun-o"></i></a>
+					<a href="javascript:chooseStyle('dark-theme', 60)"<i class="fa fa-moon-o"></i></a>
 				</form>
             </div>
 

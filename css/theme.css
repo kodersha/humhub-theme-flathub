@@ -267,6 +267,9 @@ form.dropdown-controls {
     font-size: 12px !important;
     font-weight: normal !important;
 }
+.topbar .dropdown.account .caret {
+	margin: 20px 0 0 8px;
+}
 #topbar-first {
 	position: fixed;
     background-color: #4f5a6e;
@@ -2785,24 +2788,18 @@ img.bounceIn {
     color: #0177b5;
 }
 #switchform {
-    position: relative;
+    position: absolute;
     z-index: 10;
-    float: left;
-    padding: 4px 10px 1px 0;
-    background: #424B5F;
     opacity: 0.9;
+    right: 0;
 }
-#switchform input[type="radio"],
-#switchform input[type="checkbox"] {
-	-webkit-border-radius: 1px;
-	-moz-border-radius: 1px;
-	border-radius: 1px;
-    position: relative;
-    outline: 9px solid #333;
-    outline-offset: -7px;
-    cursor: pointer;
+#switchform a {
+	color: #fff;	
 }
-#switchform input[type="radio"]:first-child,
-#switchform input[type="checkbox"]:first-child {
-    outline: 9px solid #fff;
+#switchform a:first-child {
+	display: none;
+}
+#switchform a:last-child {
+	display: block;
+	margin: 10px 15px 0 0;
 }

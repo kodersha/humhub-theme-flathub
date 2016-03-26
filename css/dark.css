@@ -393,3 +393,10 @@ ul.tag_input {
 .popover.left>.arrow:after {
 	border-left-color: #333;
 }
+#switchform a:first-child {
+	margin: 7px 15px 0 0;
+	display: block;
+}
+#switchform a:last-child {
+	display: none !important;
+}
