@@ -1,10 +1,11 @@
 <!-- MAIN STYLE -->
 
-<link href="<?php echo $this->theme->getBaseUrl() . '/css/theme.css'; ?>" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen" title="white-theme" href="<?php echo $this->theme->getBaseUrl() . '/css/theme.css'; ?>">
+<link rel="alternate stylesheet" type="text/css" media="screen" title="dark-theme" href="<?php echo $this->theme->getBaseUrl() . '/css/dark.css'; ?>">
 
-<!-- COLOR uncomment for use -->
+<!-- JS -->
 
-<!-- <link href="<?php echo $this->theme->getBaseUrl() . '/css/dark.css'; ?>" rel="stylesheet"> -->
+<script src="<?php echo $this->theme->getBaseUrl() . '/js/styleswitch.js'; ?>"></script>
 
 <!-- OTHER -->
 

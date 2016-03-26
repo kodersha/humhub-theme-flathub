@@ -279,7 +279,7 @@ form.dropdown-controls {
 }
 #topbar-first .nav>.account {
     height: 50px;
-    margin-left: 20px;
+    margin: 0;
 }
 #topbar-first .nav>.account img {
 	margin: -1px 0 0 10px;
@@ -300,6 +300,23 @@ form.dropdown-controls {
 #topbar-first .topbar-actions {
     position: relative;
     z-index: 3;
+}
+#topbar-first .topbar-actions .dropdown-menu {
+	margin: 10px 0;
+}
+#topbar-first .topbar-actions .dropdown-menu:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    left: 50%;
+    top: 0;
+    margin: -10px 0 0 25px;
+    z-index: 1;
 }
 #topbar-first .notifications {
     position: absolute;
@@ -509,7 +526,7 @@ form.dropdown-controls {
 	margin: 10px 0 0;
 }
 #space-menu-dropdown {
-    margin: -1px 0 0 -150px !important;
+    margin: 10px 0 0 -150px !important;
 }
 #space-menu-dropdown:before {
 	content: '';
@@ -526,7 +543,25 @@ form.dropdown-controls {
     z-index: 1;
 }
 #dropdown-notifications {
-	
+	margin: 10px 0 0 43px !important;
+}
+#dropdown-messages {
+	margin: 10px 0 0 -157px !important;
+}
+#dropdown-notifications:before,
+#dropdown-messages:before {
+	content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fafafa;
+    left: 50%;
+    top: 0;
+    margin: -10px 0 0 -10px;
+    z-index: 1;
 }
 @media screen and (max-width:768px) {
     #topbar-second #space-menu-dropdown .media-list, #topbar-second #search-menu-dropdown .media-list {
@@ -2748,4 +2783,26 @@ img.bounceIn {
 }
 #share-panel .share-icon-linkedin {
     color: #0177b5;
+}
+#switchform {
+    position: relative;
+    z-index: 10;
+    float: left;
+    padding: 4px 10px 1px 0;
+    background: #424B5F;
+    opacity: 0.9;
+}
+#switchform input[type="radio"],
+#switchform input[type="checkbox"] {
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+    position: relative;
+    outline: 9px solid #333;
+    outline-offset: -7px;
+    cursor: pointer;
+}
+#switchform input[type="radio"]:first-child,
+#switchform input[type="checkbox"]:first-child {
+    outline: 9px solid #fff;
 }
