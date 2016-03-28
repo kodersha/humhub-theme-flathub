@@ -194,7 +194,7 @@ a.label-default:hover {
 }
 .form-control {
 	color: #ccc;
-	border-color: #333;
+	border-color: #2f2f2f;
     background-color: #333;
 }
 .form-control:focus {
