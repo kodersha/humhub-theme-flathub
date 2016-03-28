@@ -1487,6 +1487,12 @@ form.dropdown-controls {
 .radio label, .checkbox label {
     padding-left: 10px;
 }
+#contentFormBody .form-control {
+	border-color: transparent;
+}
+.comment_create .form-control {
+	border-color: transparent;
+}
 .form-control {
 	padding: 7px 12px;
     border: 2px solid #eee;
