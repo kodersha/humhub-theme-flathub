@@ -16,9 +16,6 @@ use yii\helpers\Url;
 		<!-- load space chooser widget -->
 		<?php echo \humhub\modules\space\widgets\Chooser::widget(); ?>
 
-		<!-- load navigation from widget -->
-		<?php echo \humhub\widgets\TopMenu::widget(); ?> 
-
 		<!-- load navigation from widget right -->
 		<?php echo \humhub\widgets\TopMenuRightStack::widget(); ?>
 	</ul>

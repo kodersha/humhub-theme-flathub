@@ -408,3 +408,30 @@ ul.tag_input {
 #switchform a:last-child {
 	display: none !important;
 }
+@media (max-width: 991px) {
+	a.list-group-item:hover,
+	a.list-group-item.active,
+	a.list-group-item.active:hover,
+	a.list-group-item.active:focus {
+		background: #4F5A6E !important;
+	}
+}
+.dashboard-menu-item a {
+    border-left-color: #333 !important;
+}
+.dashboard-menu-item a:hover, 
+.dashboard-menu-item a.active, 
+.dashboard-menu-item a.active:hover, 
+.dashboard-menu-item a.active:focus {
+    color: #fff;
+    background-color: #2f2f2f;
+    border-left-color: #4F5A6E !important;
+}
+@media (max-width:991px) {
+	.dashboard-menu-item a:hover,
+	.dashboard-menu-item a.active,
+	.dashboard-menu-item a.active:hover,
+	.dashboard-menu-item a.active:focus {
+		background: #4F5A6E !important;
+	}
+}	

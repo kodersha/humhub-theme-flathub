@@ -3,7 +3,8 @@ $this->pageTitle = Yii::t('DashboardModule.views_dashboard_index', 'Dashboard');
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-md-4 layout-sidebar-container"> 
+        <div class="col-md-4 layout-sidebar-container">
+			<?php echo \humhub\widgets\TopMenu::widget(); ?> 
             <?php
             echo \humhub\modules\dashboard\widgets\Sidebar::widget(['widgets' => [
                     [\humhub\modules\activity\widgets\Stream::className(), ['streamAction' => '/dashboard/dashboard/stream'], ['sortOrder' => 150]]
