@@ -1018,12 +1018,12 @@ form.dropdown-controls {
 	}
 	.panel-profile .panel-profile-header .img-profile-data h1 {
 		max-width: 100%;
-		font-size: 26px;
+		font-size: 26px !important;
 		padding: 0;
 	}
 	.panel-profile .panel-profile-header .img-profile-data h2 {
-		max-width: 100%;
-		font-size: 13px;
+		max-width: 100% !important;
+		font-size: 13px !important;
 		padding: 0;
 	}
 	.panel-profile .panel-profile-header .profile-user-photo-container {
@@ -1041,6 +1041,11 @@ form.dropdown-controls {
 	}
 	.panel-profile .panel-profile-header #profile-image-upload-buttons {
 		right: 3px;
+	}
+}
+@media screen and (max-width:768px) {
+	.panel .statistics .entry {
+		margin-right: 10px;
 	}
 }
 #spaces-statistics-panel .panel-heading strong,
