@@ -20,5 +20,12 @@ FlatHub - light flat theme for HumHub
 - You can change intro videos in folder: ../FlatHub/video
 - You can change slider settings in file: ../FlatHub/views/dashboard/widgets/share.php
 
+## Donate
+If you want help author to buy pizzas.
+- Z379197233784
+- E703204503713
+- R122595933015
+(Webmoney)
+
 ## Author
 Alexandra Travkina - [thrashed.ru](http://thrashed.ru)
