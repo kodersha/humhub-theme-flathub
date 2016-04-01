@@ -7,7 +7,7 @@
 
 <script src="<?php echo $this->theme->getBaseUrl() . '/js/styleswitch.js'; ?>"></script>
 
-<!-- OTHER -->
+<!-- OTHER --> 
 
 <link href="<?php echo $this->theme->getBaseUrl() . '/css/lightbox.css'; ?>" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Ubuntu+Condensed&subset=latin,cyrillic" rel="stylesheet" type="text/css">

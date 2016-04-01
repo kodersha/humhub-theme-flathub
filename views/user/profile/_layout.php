@@ -2,7 +2,7 @@
 $user = $this->context->getUser();
 ?>
 <div class="container profile-layout-container">
-    <div class="row">
+    <div class="row"> 
         <div class="col-md-12">
             <?= \humhub\modules\user\widgets\ProfileHeader::widget(['user' => $user]); ?>
         </div>

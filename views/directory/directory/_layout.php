@@ -7,7 +7,7 @@
             <?php echo \humhub\modules\directory\widgets\Sidebar::widget(); ?>
         </div>	
         <div class="col-md-8 panel-hidden">
-            <?php echo $content; ?>
+            <?php echo $content; ?> 
         </div>
     </div>
 </div>

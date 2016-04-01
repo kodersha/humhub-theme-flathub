@@ -6,7 +6,7 @@ use \humhub\compat\CHtml;
 
 $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
 ?>
-
+ 
 <div class="container" style="text-align: center;">
     <?= humhub\widgets\SiteLogo::widget(['place' => 'login']); ?>
     <br>

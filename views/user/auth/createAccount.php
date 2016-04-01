@@ -18,7 +18,7 @@ $this->pageTitle = Yii::t('UserModule.views_auth_createAccount', 'Create Account
             </div>
         </div>
     </div>
-</div>
+</div> 
 
 <script type="text/javascript">
     $(function () {

@@ -15,7 +15,7 @@ use \humhub\modules\user\models\User;
 
 /**
  * AccountMenuWidget as (usally left) navigation on users account options.
- *
+ * 
  * @package humhub.modules_core.user.widgets
  * @since 0.5
  * @author Luke

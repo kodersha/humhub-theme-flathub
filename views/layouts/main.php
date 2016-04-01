@@ -11,7 +11,7 @@ AppAsset::register($this);
 <?php $this->beginPage() ?>
     <!DOCTYPE html>
     <html lang="en">
-    <head>
+    <head> 
         <!-- start: Meta -->
         <meta charset="utf-8">
         <title><?php echo $this->pageTitle; ?></title>

@@ -1045,7 +1045,7 @@ form.dropdown-controls {
 }
 @media screen and (max-width:768px) {
 	.panel .statistics .entry {
-		margin-right: 10px;
+		margin-right: 10px; 
 	}
 }
 #spaces-statistics-panel .panel-heading strong,

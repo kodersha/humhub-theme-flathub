@@ -18,7 +18,7 @@ use humhub\models\Setting;
                 'confirmJS' => '$(".panel-tour").slideToggle("slow")'
             ), true) . "</li>";
         ?>
-
+ 
         <!-- Display panel menu widget -->
         <?php echo \humhub\widgets\PanelMenu::widget(array('id' => 'getting-started-panel', 'extraMenus' => $removeOptionHtml)); ?>
 

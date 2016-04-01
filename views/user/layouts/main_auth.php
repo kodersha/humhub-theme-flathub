@@ -1,7 +1,7 @@
 <?php /* @var $this Controller */ ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> 
         <!-- start: Meta -->
         <meta charset="utf-8">
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>

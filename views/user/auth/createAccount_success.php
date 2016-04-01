@@ -5,7 +5,7 @@ use yii\helpers\Url;
 
 $this->pageTitle = Yii::t('UserModule.views_auth_createAccount', 'Create Account');
 ?>
-
+ 
 <div class="container" style="text-align: center;">
     <h1 id="app-title" class="animated fadeIn"><a href="<?php echo Yii::$app->homeUrl; ?>"><?php echo Html::encode(Yii::$app->name); ?></a></h1>
     <br/>

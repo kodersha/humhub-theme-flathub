@@ -10,7 +10,7 @@ use humhub\modules\user\models\User;
  *
  * Only a controller which uses the 'application.modules_core.user.ProfileControllerBehavior'
  * can use this widget.
- *
+ * 
  * The current user can be gathered via:
  *  $user = Yii::$app->getController()->getUser();
  *

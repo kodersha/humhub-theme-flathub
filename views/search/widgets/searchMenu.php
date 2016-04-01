@@ -8,7 +8,7 @@ use yii\helpers\Html;
     <a href="<?php echo Url::to(['/search/search/index']); ?>" id="search-menu" class="dropdown-toggle tt" data-toggle="tooltip" data-placement="bottom" data-original-title="<?php echo Yii::t('DirectoryModule.views_directory_spaces', 'Search'); ?>" >
         <i class="fa fa-search"></i></a>
 </li>
-<!-- <li class="dropdown">
+<!-- <li class="dropdown"> 
     <a href="#" id="search-menu" class="dropdown-toggle" data-toggle="dropdown">
         <i class="fa fa-search"></i></a>
     <ul class="dropdown-menu pull-right" id="search-menu-dropdown">

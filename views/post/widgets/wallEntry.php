@@ -10,7 +10,7 @@ $richOutput = humhub\widgets\RichText::widget(['text' => $post->message, 'record
 </span>
 <a class="more-link-post hidden" id="more-link-post-<?php echo $post->id; ?>" data-state="down" href="javascript:showMore(<?php echo $post->id; ?>);"><?php echo Yii::t('PostModule.widgets_views_post', '...'); ?>
 </a>
-<script type="text/javascript">
+<script type="text/javascript"> 
 <?php if ($justEdited): ?>
         $('#post-content-<?php echo $post->id; ?>').addClass('highlight');
         $('#post-content-<?php echo $post->id; ?>').delay(200).animate({backgroundColor: 'transparent'}, 1000);

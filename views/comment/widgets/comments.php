@@ -35,7 +35,7 @@ use humhub\widgets\AjaxButton;
 </div>
 <?php /* END: Comment Create Form */ ?>
 
-<script type="text/javascript">
+<script type="text/javascript"> 
 
 <?php if (count($comments) != 0) { ?>
         // make comments visible at this point to fixing autoresizing issue for textareas in Firefox

@@ -13,7 +13,7 @@
 				IMAGES 
 				Imgaes folder: ../FlatHub/img/orbit/banner
 				Images format: 346x346px jpg
-			-->
+			--> 
 			
 			<div id="featured"> 
 				<img src="<?php echo $this->theme->getBaseUrl() . '/img/orbit/banner/1.jpg'; ?>" rel="caption-1" />

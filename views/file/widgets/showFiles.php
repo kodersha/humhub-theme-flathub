@@ -14,7 +14,7 @@ $object = $this->context->object;
             <?php if ($file->getMimeBaseType() == "image") : ?>
                 <a class="image-grid <?php if (count($files) < 3) { echo "half"; } ?> <?php if (count($files) < 2) { echo "full"; } ?>" data-lightbox="<?php if (count($files) > 0) { echo "image-" . $object->getUniqueId(); } ?>" href="<?php echo $file->getUrl(); ?>#.jpeg">
                     <img src="<?php echo $file->getUrl(); ?>#.jpeg" data-highres="<?php echo $file->getUrl(); ?>#.jpeg">
-                </a>
+                </a> 
             <?php endif; ?>
         <?php endforeach; ?>
     </div>

@@ -7,7 +7,7 @@ $space = $this->context->contentContainer;
             <?php echo humhub\modules\space\widgets\Header::widget(['space' => $space]); ?>
 
         </div>
-    </div>
+    </div> 
     <div class="row">
 
         <?php if (isset($this->context->hideSidebar) && $this->context->hideSidebar) : ?>

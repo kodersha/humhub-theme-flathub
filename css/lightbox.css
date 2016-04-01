@@ -6,7 +6,7 @@ body:after {
     url(../img/lightbox/next.png);
     display: none;
 }
-.lightboxOverlay {
+.lightboxOverlay { 
     background: rgba(31, 31, 30, .97);
     position: absolute;
     top: 0;

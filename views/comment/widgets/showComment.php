@@ -11,7 +11,7 @@ $canWrite = $comment->canWrite();
 $canDelete = $comment->canDelete();
 ?>
 
-<div class="comm">
+<div class="comm"> 
 	<div class="media" id="comment_<?php echo $comment->id; ?>">
 		<?php if ($canWrite || $canDelete) : ?>
 
