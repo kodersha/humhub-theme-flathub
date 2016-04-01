@@ -2123,6 +2123,7 @@ ul.tag_input li img {
     padding-top: 15px;
     height: 0;
     overflow: hidden;
+	margin: 20px -20px 20px;
 }
 .oembed_snippet iframe {
     position: absolute;
@@ -2276,7 +2277,7 @@ ul.tag_input.focus {
     padding-left: 0;
     list-style: none;
 }
-.post-files, .oembed_snippet {
+.post-files {
     margin: 20px -20px 20px;
 	display: inline-table;
 }
