@@ -564,9 +564,6 @@ form.dropdown-controls {
     z-index: 1;
 }
 @media screen and (max-width:991px) {
-	#topbar-first .notifications {
-		position: relative;
-	}
 	#topbar-second #space-menu-dropdown .media-list, #topbar-second #search-menu-dropdown .media-list {
 		max-height: 200px;
 	}
@@ -912,7 +909,8 @@ form.dropdown-controls {
 }
 .panel-profile .panel-profile-header .img-profile-header-background {
     border-radius: 1px;
-    min-height: 110px;
+	min-height: 150px;
+	object-fit: cover;
 }
 .panel-profile .panel-profile-header .img-profile-data {
     position: absolute;
@@ -1026,6 +1024,9 @@ form.dropdown-controls {
 		font-size: 13px !important;
 		padding: 0;
 	}
+	.panel-profile .panel-profile-header .img-profile-header-background {
+		min-height: 115px;
+	}
 	.panel-profile .panel-profile-header .profile-user-photo-container {
 		width: 100px !important;
 		height: 100px !important;		
@@ -1044,8 +1045,11 @@ form.dropdown-controls {
 	}
 }
 @media screen and (max-width:768px) {
+	.panel .panel-body {
+		padding-top: 55px;
+	}
 	.panel .statistics .entry {
-		margin-right: 10px; 
+		margin-right: 15px;
 	}
 }
 #spaces-statistics-panel .panel-heading strong,
@@ -2750,7 +2754,6 @@ img.bounceIn {
 	}
 	.panel-profile-controls {
 		padding-left: 0 !important;
-		padding-top: 50px;
 	}
 	.panel-profile .panel-profile-header .img-profile-data h1 {
 		font-size: 20px !important;
