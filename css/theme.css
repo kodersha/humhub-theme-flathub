@@ -2158,10 +2158,67 @@ ul.tag_input li img {
 	color: #bebebe;
 }
 .wall-entry-controls, .wall-entry-controls a {
-    font-size: 11px;
-    color: #aeaeae;
+    font-size: 16px;
+    color: #aeaeae !important;
     margin-top: 10px;
     margin-bottom: 0;
+}
+.wall-entry-controls, .wall-entry-controls a:hover {
+	color: #777 !important;
+}
+.wall-entry-controls {
+	color: transparent !important;
+}
+.wall-entry-controls .comments-show {
+    float: right;
+}
+.likeLinkContainer a.like.likeAnchor:hover {
+	color: #888 !important;
+}
+.likeLinkContainer a.unlike.likeAnchor {
+	color: #888 !important;
+}
+.likeLinkContainer span.likeCount.tt,
+.likeLinkContainer span.likeCount {
+    font-size: 12px;
+}
+.share .shareLink {
+    margin: -21px 25px 0 0 !important;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+.share .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: initial;
+    margin: 0 0 40px;
+    padding: 10px;
+    background: #fafafa;
+	min-width: initial;
+	-webkit-box-shadow: 0 0 5px rgba(136, 136, 136, 0.12);
+    -moz-box-shadow: 0 0 5px rgba(136, 136, 136, 0.12);
+	box-shadow: 0 0 5px rgba(136, 136, 136, 0.12);
+}
+.share .dropdown-menu:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fafafa;
+    margin: 10px 0 0 0;
+    right: 24px;
+    z-index: 1;
+}
+.share .shareContainer .fa {
+    font-size: 16px !important;
+}
+.share .shareContainer {
+    text-align: center;
+    display: block;
 }
 .space-owner {
     text-align: center;

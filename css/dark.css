@@ -408,6 +408,18 @@ ul.tag_input {
 #switchform a:last-child {
 	display: none !important;
 }
+.wall-entry-controls, .wall-entry-controls a { 
+	color: #656565 !important;
+}
+.wall-entry-controls {
+    color: transparent !important;
+}
+.share .dropdown-menu {
+    background: #2f2f2f;
+}
+.share .dropdown-menu:after {
+    border-top-color: #2f2f2f;
+}
 @media (max-width: 991px) {
 	a.list-group-item:hover,
 	a.list-group-item.active,
