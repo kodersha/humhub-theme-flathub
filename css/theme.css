@@ -1011,6 +1011,38 @@ form.dropdown-controls {
 .panel-tour .nav>li>a:hover, .nav>li>a:focus {
 	background-color: #4F5A6E;
 }
+@media screen and (max-width:991px) {
+	.panel-profile .panel-profile-header .img-profile-data {
+		text-align: center;
+		padding: 0;
+	}
+	.panel-profile .panel-profile-header .img-profile-data h1 {
+		max-width: 100%;
+		font-size: 26px;
+		padding: 0;
+	}
+	.panel-profile .panel-profile-header .img-profile-data h2 {
+		max-width: 100%;
+		font-size: 13px;
+		padding: 0;
+	}
+	.panel-profile .panel-profile-header .profile-user-photo-container {
+		width: 100px !important;
+		height: 100px !important;		
+	}
+	.panel-profile .panel-profile-header .profile-user-photo-container .profile-user-photo {
+		width: 100px !important;
+		height: 100px !important;
+		border: 3px solid #fff;
+	}
+	.panel-profile .panel-profile-header	#profilefileupload {
+		width: 100px !important;
+		height: 100px !important;		
+	}
+	.panel-profile .panel-profile-header #profile-image-upload-buttons {
+		right: 3px;
+	}
+}
 #spaces-statistics-panel .panel-heading strong,
 #user-statistics-panel .panel-heading stong {
 	font-size: 20px !important;
@@ -2199,11 +2231,10 @@ ul.tag_input.focus {
     list-style: none;
 }
 .post-files, .oembed_snippet {
-    display: flex;
     margin: 20px -20px 20px;
+	display: inline-table;
 }
 .image-grid {
-    background: #fafafa;
     display: table;
     float: left;
 }
@@ -2707,7 +2738,7 @@ img.bounceIn {
 		background: #adc !important;
 		color: #fff !important;
 	}
-	.layout-sidebar-container {
+	.layout-sidebar-container #share-panel {
 		display: none;
 	}
 }

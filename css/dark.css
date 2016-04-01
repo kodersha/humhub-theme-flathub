@@ -218,9 +218,6 @@ a.list-group-item:hover, a.list-group-item.active, a.list-group-item.active:hove
 	background-color: #2f2f2f;
 	color: #fff;
 }
-.image-grid {
-	background: #2f2f2f;
-}
 .media .content a {
 	color: #90A4C7;
 }
