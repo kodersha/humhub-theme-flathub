@@ -25,7 +25,8 @@ If you want help author to buy pizzas.
 - Z379197233784
 - E703204503713
 - R122595933015
-(Webmoney)
+
+Webmoney
 
 ## Author
 Alexandra Travkina - [thrashed.ru](http://thrashed.ru)
