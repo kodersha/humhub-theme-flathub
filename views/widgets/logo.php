@@ -5,13 +5,13 @@ use yii\helpers\Html;
     <?php if ($logo->hasImage()) : ?>
         <a class="navbar-brand hidden-xs" style="height: 50px; padding:5px;"
            href="<?php echo Yii::$app->homeUrl; ?>">
-            <img class="img-rounded" src="<?php echo $logo->getUrl(); ?>"
-                 id="img-logo"/>
+            <img class="img-rounded" src="<?php echo $logo->getUrl(); ?>" id="img-logo"/>
         </a>
     <?php endif; ?>
     <a class="navbar-brand" style="<?php if ($logo->hasImage()) : ?>display:none;<?php endif; ?> "
        href="<?php echo Yii::$app->homeUrl; ?>" id="text-logo">
-           <?php echo Html::encode(Yii::$app->name); ?>
+			<!-- <img src="<?php echo $this->theme->getBaseUrl() . '/img/logo.png'; ?>"></img> -->
+			<?php echo Html::encode(Yii::$app->name); ?>
     </a>
 <?php endif; ?>
 

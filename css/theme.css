@@ -664,6 +664,11 @@ form.dropdown-controls {
 	font-size: 25px;
     font-family: "Ubuntu Condensed";
 }
+.navbar-brand img {
+    float: left;
+    margin: -10px 10px 0 0;
+    width: 30px;
+}
 .media-list li {
     padding: 10px;
     border-bottom: 1px solid #fafafa;
@@ -1167,11 +1172,15 @@ form.dropdown-controls {
     border-top: 1px solid #f5f5f5;
 }
 .well .comm:first-child {
-	margin: 15px 0 0;
+	margin: -10px -20px -20px;
 }
 .well .comm:last-child hr {
 	border: 0;
 	margin: 0 0 35px;
+}
+.well .comm {
+	padding: 20px 20px 0;
+    margin: -20px;
 }
 .well table>thead {
     font-size: 11px;
@@ -2168,6 +2177,18 @@ ul.tag_input li img {
 }
 .wall-entry-controls {
 	color: transparent !important;
+}
+.comm .wall-entry-controls {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+	color: transparent !important;
+	opacity: 0;
+}
+.comm:hover .wall-entry-controls {
+	opacity: 1;
 }
 .wall-entry-controls .comments-show {
     float: right;
