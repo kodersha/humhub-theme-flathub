@@ -97,7 +97,13 @@ a.label-default:hover {
 .nav-tabs .dropdown-menu li.selected {
 	background-color: #2f2f2f!important;
 }
-.modal-content {
+.modal-content .modal-header {
+	background-color: #333;
+}
+.modal-content .modal-body {
+	background-color: #333;
+}
+.modal-content .modal-footer {
 	background-color: #333;
 }
 .modal h1,

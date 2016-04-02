@@ -68,7 +68,7 @@
     color: #aeaeae !important;
 }
 body {
-    color: #444;
+    color: #4b4a47;
     padding-top: 65px;
     background-color: #eef1f4;
     font-family: "Open Sans", sans-serif;
@@ -662,7 +662,7 @@ form.dropdown-controls {
 }
 .navbar-brand {
 	font-size: 25px;
-    font-family: "Ubuntu Condensed";
+    font-family: "Rancho", "Ubuntu Condensed";
 }
 .navbar-brand img {
     float: left;
@@ -1862,11 +1862,13 @@ a.list-group-item:hover, a.list-group-item.active, a.list-group-item.active:hove
     right: 0;
     margin: 50px auto;
 	max-width: 740px;
+	background-color: transparent;
 }
 .modal-content .modal-header {
     padding: 20px 20px 0;
     border-bottom: none;
     text-align: center;
+	background-color: #fff;
 }
 .modal-content .modal-header .close {
     margin-top: 2px;
@@ -1875,6 +1877,7 @@ a.list-group-item:hover, a.list-group-item.active, a.list-group-item.active:hove
 .modal-content .modal-body {
     padding: 20px;
     font-size: 13px;
+	background-color: #fff;
 }
 .modal-content .modal-footer {
     margin-top: 0;
@@ -1882,6 +1885,7 @@ a.list-group-item:hover, a.list-group-item.active, a.list-group-item.active:hove
     padding: 10px 20px 30px;
     border-top: none;
     text-align: center;
+	background-color: #fff;
 }
 .modal-content .modal-footer hr {
     margin-top: 0;
