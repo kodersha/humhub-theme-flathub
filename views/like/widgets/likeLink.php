@@ -5,7 +5,7 @@ use yii\helpers\Html;
 $this->registerJsFile('@web/resources/like/like.js', ['position' => humhub\components\View::POS_BEGIN]);
 ?>
 
-<span class="likeLinkContainer" id="likeLinkContainer_<?= $id ?>">
+<span class="likeLinkContainer pull-left" id="likeLinkContainer_<?= $id ?>">
 
     <?php if (Yii::$app->user->isGuest): ?>
         <?php echo Html::a(Yii::t('LikeModule.widgets_views_likeLink', '<i class="fa fa-heart-o"></i>'), Yii::$app->user->loginUrl, array('data-target' => '#globalModal')); ?>
