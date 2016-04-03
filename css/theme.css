@@ -1050,7 +1050,7 @@ form.dropdown-controls {
 	}
 }
 @media screen and (max-width:768px) {
-	.panel .panel-body {
+	.profile-layout-container .panel .panel-body {
 		padding-top: 55px;
 	}
 	.panel .statistics .entry {
