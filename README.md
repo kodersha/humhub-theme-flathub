@@ -1,4 +1,6 @@
-#  humhub-themes-flathub
+#  [HumHub](https://github.com/humhub/humhub) Themes FlatHub
+
+## Discription
 FlatHub - light flat theme for HumHub
 
 ## Features
