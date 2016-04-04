@@ -1,4 +1,9 @@
-#  humhub-themes-flathub
+[![Scrutinizer CI](https://scrutinizer-ci.com/g/Felli/humhub-themes-flathub/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Felli/humhub-themes-flathub/)
+[![Scrutinizer CI](https://scrutinizer-ci.com/g/Felli/humhub-themes-flathub/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Felli/humhub-themes-flathub/)
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
+#  [HumHub](https://github.com/humhub/humhub) Themes FlatHub
+
+## Discription
 FlatHub - light flat theme for HumHub
 
 ## Features
