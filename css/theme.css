@@ -153,7 +153,7 @@ input[type=text], input[type=password], input[type=select] {
 }
 .login-container h1, .login-container h2 {
 	text-shadow: 0 0 10px rgba(0,0,0,0.2);
-	font-family: "Rancho", "Ubuntu Condensed";
+    font-family: "Ubuntu Condensed";
     color: #fff !important;
     font-size: 40px;
 	cursor: default;
@@ -235,7 +235,7 @@ form.dropdown-controls {
     float: left;
 }
 .topbar ul.nav>li>a {
-	background-color: #424b5f;
+	background-color: #D0D1CB;
     padding: 5px 10px;
     margin: 10px 2px;
     display: inline-block;
@@ -244,7 +244,7 @@ form.dropdown-controls {
     text-align: left;
 }
 .topbar ul.nav>li>a:hover {
-	background-color: #353A44;
+	background-color: #C8CAC1;
 }
 .topbar .dropdown-header {
     background: #fafafa;
@@ -272,7 +272,7 @@ form.dropdown-controls {
 }
 #topbar-first {
 	position: fixed;
-    background-color: #4f5a6e;
+    background-color: #c1c1be;
     top: 0;
     z-index: 1030;
     color: white;
@@ -431,17 +431,17 @@ form.dropdown-controls {
     border-top-color: #fafafa;
 }
 #topbar-first .btn-group>a {
-    background-color: #424b5f;
+    background-color: #D0D1CB;
 }
 #topbar-first .btn-group>a:hover {
-	background-color: #353A44;
+	background-color: #C8CAC1;
 }
 #topbar-first .btn-enter {
-    background-color: #424b5f;
+    background-color: #D0D1CB;
     margin: 6px 0;
 }
 #topbar-first .btn-enter:hover {
-    background-color: #363E50;
+    background-color: #C8CAC1;
 }
 #topbar-first .media-list a {
     color: #555;
@@ -470,10 +470,10 @@ form.dropdown-controls {
 	font-weight: normal;
 }
 #topbar-first .account .user-title span {
-    color: #d7d7d7;
+    color: #fff;
 }
 #topbar-first .dropdown.account>a, #topbar-first .dropdown.account.open>a, #topbar-first .dropdown.account>a:hover, #topbar-first .dropdown.account.open>a:hover {
-    background-color: #424b5f;
+    background-color: #D0D1CB;
 }
 #topbar-second {
     background-image: none;
@@ -1050,7 +1050,7 @@ form.dropdown-controls {
 	}
 }
 @media screen and (max-width:768px) {
-	.profile-layout-container .panel .panel-body {
+	.panel .panel-body {
 		padding-top: 55px;
 	}
 	.panel .statistics .entry {
@@ -1549,7 +1549,6 @@ form.dropdown-controls {
 	-webkit-border-radius: 1px;
 	-moz-border-radius: 1px;
 	border-radius: 1px;
-	min-height: 40px;
     box-shadow: none;
 }
 .form-control:focus {
@@ -2199,17 +2198,17 @@ ul.tag_input li img {
     float: right;
 }
 .likeLinkContainer a.like.likeAnchor:hover {
-	color: #d75f45 !important;
+	color: #888 !important;
 }
 .likeLinkContainer a.unlike.likeAnchor {
-	color: #d75f45 !important;
+	color: #888 !important;
 }
 .likeLinkContainer span.likeCount.tt,
 .likeLinkContainer span.likeCount {
     font-size: 12px;
 }
 .share .shareLink {
-    margin: 0 25px 0 0 !important;
+    margin: -21px 25px 0 0 !important;
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -2218,7 +2217,7 @@ ul.tag_input li img {
     position: absolute;
     right: 0;
     left: initial;
-    margin: 0 0 20px;
+    margin: 0 0 40px;
     padding: 10px;
     background: #fafafa;
 	min-width: initial;
