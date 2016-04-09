@@ -2208,7 +2208,7 @@ ul.tag_input li img {
     font-size: 12px;
 }
 .share .shareLink {
-    margin: -21px 25px 0 0 !important;
+    margin: 0 25px 0 0 !important;
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -2217,7 +2217,7 @@ ul.tag_input li img {
     position: absolute;
     right: 0;
     left: initial;
-    margin: 0 0 40px;
+    margin: 0 0 15px;
     padding: 10px;
     background: #fafafa;
 	min-width: initial;
