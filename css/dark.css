@@ -193,6 +193,9 @@ a.label-default:hover {
     border-color: #424B5F;
 }
 .panel {
+	-webkit-box-shadow: 0 2px 0 #191919;
+	-moz-box-shadow: 0 2px 0 #191919;
+	box-shadow: 0 2px 0 #191919;
 	background-color: #333;
 }
 .panel .panel-heading {

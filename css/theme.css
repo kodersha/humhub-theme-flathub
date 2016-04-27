@@ -818,12 +818,14 @@ form.dropdown-controls {
 	margin-right: 0;
 }
 .panel {
+	-webkit-box-shadow: 0 2px 0 #e6e7eb;
+	-moz-box-shadow: 0 2px 0 #e6e7eb;
+	box-shadow: 0 2px 0 #e6e7eb;
     border: none;
     background-color: #fff;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    border-radius: 1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     position: relative;
 }
 .panel h1 {
