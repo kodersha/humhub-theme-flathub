@@ -561,7 +561,7 @@ form.dropdown-controls {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #2f2f2f;
+    border-bottom: 10px solid #fafafa;
     left: 50%;
     top: 0;
     margin: -10px 0 0 -10px;
