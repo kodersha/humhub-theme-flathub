@@ -7,11 +7,9 @@ use yii\helpers\Url;
 
 	<ul class="nav pull-left" id="search-menu-nav">
 	
-		<!--
-		<li class="visible-md visible-lg  ">
-            <a class="" href=""><i class="fa fa-home"></i></a>
+		<li class="hidden-md hidden-lg home-mobile">
+            <a href="<?php echo Yii::$app->homeUrl; ?>"><i class="fa fa-home"></i></a>
 		</li>
-		--> 
 	
 		<!-- load space chooser widget -->
 		<?php echo \humhub\modules\space\widgets\Chooser::widget(); ?>

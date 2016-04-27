@@ -288,7 +288,7 @@ form.dropdown-controls {
 	padding: 10px 17px 8px;
     line-height: 1.1em;
     text-align: left;
-	margin: 0 !important;
+	margin: 0 1px 0 0 !important;
 }
 #topbar-first .nav>.account .dropdown-toggle span {
     font-size: 12px;
@@ -302,7 +302,7 @@ form.dropdown-controls {
     z-index: 3;
 }
 #topbar-first .topbar-actions .dropdown-menu {
-	margin: 10px 5px 0 0;
+	margin: 10px 8px 0 0;
 }
 #topbar-first .topbar-actions .dropdown-menu:before {
     content: '';
@@ -661,6 +661,7 @@ form.dropdown-controls {
     color: #555;
 }
 .navbar-brand {
+	height: 49px;
 	font-size: 25px;
     font-family: "Rancho", "Ubuntu Condensed";
 }
