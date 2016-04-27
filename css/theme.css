@@ -1060,8 +1060,8 @@ form.dropdown-controls {
 	}
 }
 @media screen and (max-width:768px) {
-	.panel .panel-body {
-		padding-top: 55px;
+	.panel.panel-profile .panel-body {
+		padding-top: 70px;
 	}
 	.panel .statistics .entry {
 		margin-right: 15px;
@@ -1539,6 +1539,11 @@ form.dropdown-controls {
 }
 .btn-warning[disabled]:active, .btn-warning.disabled:active, .btn-warning[disabled].active, .btn-warning.disabled.active {
     background: #fddcb1 !important;
+}
+.btn-group.open .dropdown-toggle {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 .radio, .checkbox {
     margin-top: 5px !important;
@@ -2829,10 +2834,33 @@ img.bounceIn {
 	}
 	#space-menu-dropdown {
 		width: 300px !important;
+		margin: 10px 0 0 -37px !important;
+	}
+	#space-menu-dropdown:before {
+		left: 21%;
 	}
 	#search-menu-dropdown {
 		width: 300px !important;
 		max-height: 250px !important;
+	}
+	#dropdown-notifications {
+		width: 300px !important;
+		margin: 10px 0 0 0 !important;
+	}
+	#dropdown-notifications:before {
+		margin: -10px 0 0 -18px;
+	}
+	#dropdown-messages {
+		margin: 10px 0 0 -165px !important;
+	}
+	#dropdown-messages:before {
+		margin: -10px 0 0 23px;
+	}
+	#topbar-first .topbar-actions .dropdown-menu {
+		margin: 10px 0 0 0;
+	}
+	#topbar-first .topbar-actions .dropdown-menu:before {
+		margin: -10px 0 0 17px;
 	}
 	.notifications {
 		position: inherit !important;
@@ -2840,7 +2868,6 @@ img.bounceIn {
 	}
 	.notifications .dropdown-menu {
 		width: 300px !important;
-		margin-left: 0 !important;
 	}
 	.notifications .dropdown-menu .arrow {
 		margin-left: -142px !important;
