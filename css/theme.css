@@ -1569,6 +1569,7 @@ form.dropdown-controls {
 	-moz-border-radius: 1px;
 	border-radius: 1px;
     box-shadow: none;
+	height: 40px;
 }
 .form-control:focus {
     border: 2px solid #adc;
