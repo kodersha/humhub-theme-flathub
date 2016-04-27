@@ -664,10 +664,19 @@ form.dropdown-controls {
 	font-size: 25px;
     font-family: "Rancho", "Ubuntu Condensed";
 }
+.navbar-brand.image {
+	padding: 0;
+	height: 49px;
+}
 .navbar-brand img {
     float: left;
-    margin: -10px 10px 0 0;
-    width: 30px;
+    width: 100%;
+    max-height: 49px;
+}
+.image-upload-container img {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 .media-list li {
     padding: 10px;

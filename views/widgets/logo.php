@@ -3,9 +3,8 @@ use yii\helpers\Html;
 ?>
 <?php if ($place == "topMenu") : ?>
     <?php if ($logo->hasImage()) : ?>
-        <a class="navbar-brand hidden-xs" style="height: 50px; padding:5px;"
-           href="<?php echo Yii::$app->homeUrl; ?>">
-            <img class="img-rounded" src="<?php echo $logo->getUrl(); ?>" id="img-logo"/>
+        <a class="navbar-brand image hidden-xs" href="<?php echo Yii::$app->homeUrl; ?>">
+            <img src="<?php echo $logo->getUrl(); ?>" id="img-logo"/>
         </a>
     <?php endif; ?>
     <a class="navbar-brand" style="<?php if ($logo->hasImage()) : ?>display:none;<?php endif; ?> "
