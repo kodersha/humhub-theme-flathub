@@ -16,9 +16,8 @@ use yii\helpers\Html;
 
 <?php if ($place == "login") : ?>
     <?php if ($logo->hasImage()) : ?>
-        <a href="<?php echo Yii::$app->homeUrl; ?>">
-            <img class="img-rounded" src="<?php echo $logo->getUrl(); ?>"
-                 id="img-logo"/>
+        <a class="login-logo" href="<?php echo Yii::$app->homeUrl; ?>">
+            <img src="<?php echo $logo->getUrl(); ?>" id="img-logo"/>
         </a>
         <br>
     <?php else: ?>

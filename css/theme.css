@@ -172,6 +172,10 @@ input[type=text], input[type=password], input[type=select] {
 .login-container select {
     color: #555;
 }
+.login-logo {
+    position: relative;
+    z-index: 1000;
+}
 .is_overlay { 
 	display: block;
 	width: 100%;
