@@ -916,6 +916,10 @@ form.dropdown-controls {
     font-size: 20px;
     font-family: "PT Sans";
 }
+.space-layout-container .panel-body strong {
+    margin: 0 0 5px;
+    display: block;	
+}
 .panel.members .panel-body a img, .panel.groups .panel-body a img, .panel.follower .panel-body a img, .panel.spaces .panel-body a img {
     margin-bottom: 5px;
 	border-radius: 50% !important;
@@ -982,7 +986,7 @@ form.dropdown-controls {
 .panel-profile .panel-profile-header .img-profile-data h2.space {
     font-size: 16px;
     font-weight: 300;
-    max-width: 600px;
+    max-width: 410px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1000,8 +1004,9 @@ form.dropdown-controls {
     width: 145px !important;
     height: 145px !important;
     border: 5px solid #fff;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
+	background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
 }
 .panel-profile .panel-profile-controls {
@@ -1129,9 +1134,10 @@ form.dropdown-controls {
     color: #fff;
     text-align: center;
     display: inline-block;
-	-webkit-border-radius: 1px !important;
-	-moz-border-radius: 1px !important;
-	border-radius: 1px !important;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	border-radius: 50% !important;
+	border: 5px solid #fff;
 }
 .dropdown .current-space-image {
 	-webkit-border-radius: 1px !important;
@@ -1582,7 +1588,7 @@ form.dropdown-controls {
     border-radius: 30px;
     background-image: url("../img/icon_search16x16.png");
     background-repeat: no-repeat;
-    background-position: 10px 8px;
+    background-position: 10px 10px;
     padding-left: 34px;
 }
 .form-group-search {
@@ -1593,6 +1599,7 @@ form.dropdown-controls {
     top: 2px;
     right: 2px;
     border-radius: 30px;
+	padding: 9px 10px 9px 12px;
 }
 textarea {
     resize: none;
@@ -1655,6 +1662,9 @@ input:-moz-placeholder {
 .help-block {
     color: #aeaeae !important;
     font-size: 12px;
+}
+.input-group {
+	margin: 0 !important;
 }
 .input-group-addon {
     border: none;
