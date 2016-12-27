@@ -91,7 +91,7 @@ AppAsset::register($this);
             $('body').find(':checkbox, :radio').flatelements();
         </script>
 
-        <?php //echo HSetting::GetText('trackingHtmlCode'); ?>
+        <?php echo HSetting::GetText('trackingHtmlCode'); ?>
         <?php $this->endBody() ?>
     </body>
 
