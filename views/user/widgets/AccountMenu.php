@@ -70,7 +70,7 @@ class AccountMenu extends BaseMenu
             'label' => Yii::t('UserModule.widgets_AccountMenuWidget', 'Notifications'),
             'icon' => '<i class="fa fa-bell"></i>',
             'group' => 'account',
-            'url' => Url::toRoute('//user/account/emailing/'),
+            'url' => Url::toRoute('/user/account/emailing/'),
             'sortOrder' => 200,
             'isActive' => (Yii::$app->controller->action->id == "emailing"),
         ));
@@ -81,7 +81,7 @@ class AccountMenu extends BaseMenu
                 'label' => Yii::t('UserModule.widgets_AccountMenuWidget', 'E-Mail'),
                 'icon' => '<i class="fa fa-paper-plane"></i>',
                 'group' => 'account',
-                'url' => Url::toRoute('//user/account/change-email'),
+                'url' => Url::toRoute('/user/account/change-email'),
                 'sortOrder' => 300,
                 'isActive' => (Yii::$app->controller->action->id == "change-email"),
             ));
@@ -93,7 +93,7 @@ class AccountMenu extends BaseMenu
                 'label' => Yii::t('UserModule.widgets_AccountMenuWidget', 'Password'),
                 'icon' => '<i class="fa fa-key"></i>',
                 'group' => 'account',
-                'url' => Url::toRoute('//user/account/change-password'),
+                'url' => Url::toRoute('/user/account/change-password'),
                 'sortOrder' => 500,
                 'isActive' => (Yii::$app->controller->action->id == "change-password"),
             ));
@@ -101,7 +101,7 @@ class AccountMenu extends BaseMenu
                 'label' => Yii::t('UserModule.widgets_AccountMenuWidget', 'Delete account'),
                 'icon' => '<i class="fa fa-trash-o"></i>',
                 'group' => 'account',
-                'url' => Url::toRoute('//user/account/delete'),
+                'url' => Url::toRoute('/user/account/delete'),
                 'sortOrder' => 600,
                 'isActive' => (Yii::$app->controller->action->id == "delete"),
             ));
@@ -111,5 +111,3 @@ class AccountMenu extends BaseMenu
     }
 
 }
-
-?>
