@@ -35,20 +35,20 @@ class ProfileMenu extends \humhub\widgets\BaseMenu
         $this->addItem(array(
             'label' => Yii::t('UserModule.widgets_ProfileMenuWidget', 'Stream'),
             'group' => 'profile',
-            'url' => $this->user->createUrl('//user/profile'),
+            'url' => $this->user->createUrl('/user/profile'),
             'sortOrder' => 200,
             'isActive' => (Yii::$app->controller->id == "profile" && Yii::$app->controller->action->id == "index"),
         ));
 
-        //if (Yii::$app->getController()->getUser()->profile->about != "") {
+          if (Yii::$app->getController()->getUser()->profile->about != "") {
         $this->addItem(array(
             'label' => Yii::t('UserModule.widgets_ProfileMenuWidget', 'About'),
             'group' => 'profile',
-            'url' => $this->user->createUrl('//user/profile/about'),
+            'url' => $this->user->createUrl('/user/profile/about'),
             'sortOrder' => 300,
             'isActive' => (Yii::$app->controller->id == "profile" && Yii::$app->controller->action->id == "about"),
         ));
-        //}
+          }
 
         parent::init();
     }
@@ -63,5 +63,3 @@ class ProfileMenu extends \humhub\widgets\BaseMenu
     }
 
 }
-
-?>
