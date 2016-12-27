@@ -1,9 +1,7 @@
 <?php
-
 use \yii\helpers\Url;
 use yii\widgets\ActiveForm;
 use \humhub\compat\CHtml;
-
 $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
 ?>
  
@@ -55,9 +53,9 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
 
                 <p><?php echo Yii::t('UserModule.views_auth_login', "Don't have an account? Join the network by entering your e-mail address."); ?></p>
 
-                <?php $form = ActiveForm::begin(['id' => 'account-register-form']); ?>
+                <?php $form = ActiveForm::begin(['id' => 'invite-form']); ?>
 
-                <?php echo $form->field($registerModel, 'email')->textInput(['id' => 'register-email', 'placeholder' => $registerModel->getAttributeLabel('email')])->label(false); ?>
+                <?php echo $form->field($invite, 'email')->textInput(['id' => 'register-email', 'placeholder' => $invite->getAttributeLabel('email')])->label(false); ?>
                 <hr>
                 <?php echo CHtml::submitButton(Yii::t('UserModule.views_auth_login', 'Register'), array('class' => 'btn btn-primary')); ?>
 
@@ -74,7 +72,6 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
         // set cursor to login field
         $('#login_username').focus();
     })
-
     // Shake panel after wrong validation
 <?php if ($model->hasErrors()) { ?>
         $('#login-form').removeClass('bounceIn');
@@ -82,15 +79,11 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
         $('#register-form').removeClass('bounceInLeft');
         $('#app-title').removeClass('fadeIn');
 <?php } ?>
-
     // Shake panel after wrong validation
-<?php if ($registerModel->hasErrors()) { ?>
+<?php if ($invite->hasErrors()) { ?>
         $('#register-form').removeClass('bounceInLeft');
         $('#register-form').addClass('shake');
         $('#login-form').removeClass('bounceIn');
         $('#app-title').removeClass('fadeIn');
 <?php } ?>
-
 </script>
-
-
