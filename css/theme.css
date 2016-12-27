@@ -172,6 +172,10 @@ input[type=text], input[type=password], input[type=select] {
 .login-container select {
     color: #555;
 }
+.login-logo {
+    position: relative;
+    z-index: 1000;
+}
 .is_overlay { 
 	display: block;
 	width: 100%;
@@ -244,7 +248,7 @@ form.dropdown-controls {
     text-align: left;
 }
 .topbar ul.nav>li>a:hover {
-	background-color: #353A44;
+	background-color: #2E3546;
 }
 .topbar .dropdown-header {
     background: #fafafa;
@@ -288,7 +292,7 @@ form.dropdown-controls {
 	padding: 10px 17px 8px;
     line-height: 1.1em;
     text-align: left;
-	margin: 0 !important;
+	margin: 0 1px 0 0 !important;
 }
 #topbar-first .nav>.account .dropdown-toggle span {
     font-size: 12px;
@@ -302,7 +306,7 @@ form.dropdown-controls {
     z-index: 3;
 }
 #topbar-first .topbar-actions .dropdown-menu {
-	margin: 10px 5px 0 0;
+	margin: 10px 8px 0 0;
 }
 #topbar-first .topbar-actions .dropdown-menu:before {
     content: '';
@@ -416,10 +420,10 @@ form.dropdown-controls {
 #topbar-first .notifications .dropdown-menu.mobile-menu li a {
 	padding: 10px 15px;
 	background: initial;
-	color: #7a7a7a;
+	color: #fff;
 }
 #topbar-first .notifications .dropdown-menu.mobile-menu li a:hover {
-	background: #fafafa;
+	background-color: #2b2b2b;
 }
 #topbar-first .dropdown-footer {
     margin: 10px;
@@ -448,7 +452,7 @@ form.dropdown-controls {
     padding: 0;
 }
 #topbar-first .media-list li {
-    color: #555;
+    color: #ccc;
 }
 #topbar-first .media-list li i.accepted {
     color: #6fdbe8 !important;
@@ -470,10 +474,10 @@ form.dropdown-controls {
 	font-weight: normal;
 }
 #topbar-first .account .user-title span {
-    color: #d7d7d7;
+    color: #fff;
 }
 #topbar-first .dropdown.account>a, #topbar-first .dropdown.account.open>a, #topbar-first .dropdown.account>a:hover, #topbar-first .dropdown.account.open>a:hover {
-    background-color: #424b5f;
+	background-color: #424b5f;
 }
 #topbar-second {
     background-image: none;
@@ -661,13 +665,23 @@ form.dropdown-controls {
     color: #555;
 }
 .navbar-brand {
+	height: 49px;
 	font-size: 25px;
     font-family: "Rancho", "Ubuntu Condensed";
 }
+.navbar-brand.image {
+	padding: 0;
+	height: 49px;
+}
 .navbar-brand img {
     float: left;
-    margin: -10px 10px 0 0;
-    width: 30px;
+    width: 100%;
+    max-height: 49px;
+}
+.image-upload-container img {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 .media-list li {
     padding: 10px;
@@ -804,12 +818,14 @@ form.dropdown-controls {
 	margin-right: 0;
 }
 .panel {
+	-webkit-box-shadow: 0 2px 0 #e6e7eb;
+	-moz-box-shadow: 0 2px 0 #e6e7eb;
+	box-shadow: 0 2px 0 #e6e7eb;
     border: none;
     background-color: #fff;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    border-radius: 1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     position: relative;
 }
 .panel h1 {
@@ -900,6 +916,10 @@ form.dropdown-controls {
     font-size: 20px;
     font-family: "PT Sans";
 }
+.space-layout-container .panel-body strong {
+    margin: 0 0 5px;
+    display: block;	
+}
 .panel.members .panel-body a img, .panel.groups .panel-body a img, .panel.follower .panel-body a img, .panel.spaces .panel-body a img {
     margin-bottom: 5px;
 	border-radius: 50% !important;
@@ -966,7 +986,7 @@ form.dropdown-controls {
 .panel-profile .panel-profile-header .img-profile-data h2.space {
     font-size: 16px;
     font-weight: 300;
-    max-width: 600px;
+    max-width: 410px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -984,8 +1004,9 @@ form.dropdown-controls {
     width: 145px !important;
     height: 145px !important;
     border: 5px solid #fff;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
+	background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
 }
 .panel-profile .panel-profile-controls {
@@ -1050,8 +1071,8 @@ form.dropdown-controls {
 	}
 }
 @media screen and (max-width:768px) {
-	.panel .panel-body {
-		padding-top: 55px;
+	.panel.panel-profile .panel-body {
+		padding-top: 70px;
 	}
 	.panel .statistics .entry {
 		margin-right: 15px;
@@ -1113,9 +1134,10 @@ form.dropdown-controls {
     color: #fff;
     text-align: center;
     display: inline-block;
-	-webkit-border-radius: 1px !important;
-	-moz-border-radius: 1px !important;
-	border-radius: 1px !important;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	border-radius: 50% !important;
+	border: 5px solid #fff;
 }
 .dropdown .current-space-image {
 	-webkit-border-radius: 1px !important;
@@ -1351,7 +1373,7 @@ form.dropdown-controls {
     border-bottom-color: #555;
 }
 #topbar-first .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-    background-color: #424B5F;
+	background-color: #424B5F;
     border-color: #424B5F;
 }
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
@@ -1530,6 +1552,11 @@ form.dropdown-controls {
 .btn-warning[disabled]:active, .btn-warning.disabled:active, .btn-warning[disabled].active, .btn-warning.disabled.active {
     background: #fddcb1 !important;
 }
+.btn-group.open .dropdown-toggle {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
 .radio, .checkbox {
     margin-top: 5px !important;
     margin-bottom: 0;
@@ -1550,6 +1577,7 @@ form.dropdown-controls {
 	-moz-border-radius: 1px;
 	border-radius: 1px;
     box-shadow: none;
+	height: 40px;
 }
 .form-control:focus {
     border: 2px solid #adc;
@@ -1560,7 +1588,7 @@ form.dropdown-controls {
     border-radius: 30px;
     background-image: url("../img/icon_search16x16.png");
     background-repeat: no-repeat;
-    background-position: 10px 8px;
+    background-position: 10px 10px;
     padding-left: 34px;
 }
 .form-group-search {
@@ -1571,6 +1599,7 @@ form.dropdown-controls {
     top: 2px;
     right: 2px;
     border-radius: 30px;
+	padding: 9px 10px 9px 12px;
 }
 textarea {
     resize: none;
@@ -1633,6 +1662,9 @@ input:-moz-placeholder {
 .help-block {
     color: #aeaeae !important;
     font-size: 12px;
+}
+.input-group {
+	margin: 0 !important;
 }
 .input-group-addon {
     border: none;
@@ -2208,7 +2240,7 @@ ul.tag_input li img {
     font-size: 12px;
 }
 .share .shareLink {
-    margin: -21px 25px 0 0 !important;
+    margin: 0 25px 0 0 !important;
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -2217,7 +2249,7 @@ ul.tag_input li img {
     position: absolute;
     right: 0;
     left: initial;
-    margin: 0 0 40px;
+    margin: 0 0 15px;
     padding: 10px;
     background: #fafafa;
 	min-width: initial;
@@ -2819,10 +2851,33 @@ img.bounceIn {
 	}
 	#space-menu-dropdown {
 		width: 300px !important;
+		margin: 10px 0 0 -37px !important;
+	}
+	#space-menu-dropdown:before {
+		left: 21%;
 	}
 	#search-menu-dropdown {
 		width: 300px !important;
 		max-height: 250px !important;
+	}
+	#dropdown-notifications {
+		width: 300px !important;
+		margin: 10px 0 0 0 !important;
+	}
+	#dropdown-notifications:before {
+		margin: -10px 0 0 -18px;
+	}
+	#dropdown-messages {
+		margin: 10px 0 0 -165px !important;
+	}
+	#dropdown-messages:before {
+		margin: -10px 0 0 23px;
+	}
+	#topbar-first .topbar-actions .dropdown-menu {
+		margin: 10px 0 0 0;
+	}
+	#topbar-first .topbar-actions .dropdown-menu:before {
+		margin: -10px 0 0 17px;
 	}
 	.notifications {
 		position: inherit !important;
@@ -2830,7 +2885,6 @@ img.bounceIn {
 	}
 	.notifications .dropdown-menu {
 		width: 300px !important;
-		margin-left: 0 !important;
 	}
 	.notifications .dropdown-menu .arrow {
 		margin-left: -142px !important;
@@ -2967,4 +3021,7 @@ img.bounceIn {
 #switchform a:last-child {
 	display: block;
 	margin: 10px 15px 0 0;
+}
+.modal-content { 
+	background-color: #f2f2f2;
 }
