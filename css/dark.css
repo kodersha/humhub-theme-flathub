@@ -148,6 +148,21 @@ a.label-default:hover {
 .topbar .dropdown-header:hover {
 	color: #fff;
 }
+#topbar-first {
+    background-color: #4f5a6e;
+}
+#topbar-first .btn-group>a {
+    background-color: #424b5f;
+}
+#topbar-first .btn-group>a:hover {
+	background-color: #353A44;
+}
+#topbar-first .btn-enter {
+    background-color: #424b5f;
+}
+#topbar-first .btn-enter:hover {
+    background-color: #363E50;
+}
 #topbar-first .media-list li {
 	color: #ccc;
 }
@@ -164,7 +179,23 @@ a.label-default:hover {
 #dropdown-messages:before {
 	border-bottom-color: #2f2f2f;
 }
+#topbar-first .dropdown.account>a, #topbar-first .dropdown.account.open>a, #topbar-first .dropdown.account>a:hover, #topbar-first .dropdown.account.open>a:hover {
+    background-color: #424b5f;
+}
+.topbar ul.nav>li>a {
+	background-color: #424b5f;
+}
+#topbar-first .account .user-title span {
+    color: #d7d7d7;
+}
+#topbar-first .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: #424B5F;
+    border-color: #424B5F;
+}
 .panel {
+	-webkit-box-shadow: 0 2px 0 #191919;
+	-moz-box-shadow: 0 2px 0 #191919;
+	box-shadow: 0 2px 0 #191919;
 	background-color: #333;
 }
 .panel .panel-heading {
@@ -453,3 +484,4 @@ ul.tag_input {
 		background: #4F5A6E !important;
 	}
 }	
+.modal-content { background-color: #2f2f2f;} 
