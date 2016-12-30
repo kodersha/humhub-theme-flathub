@@ -14,19 +14,19 @@
         <?php $ver = HVersion::VERSION; ?>
 
         <?php
-        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/animate.min.css');
-        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap.min.css');
-        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/animate.min.css');
-        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/style.css');
-        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/flatelements.css');
-        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/resources/font-awesome/css/font-awesome.min.css');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/animate.min.css');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/bootstrap.min.css');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/animate.min.css');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/style.css');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/flatelements.css');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/resources/font-awesome/css/font-awesome.min.css');
 
 
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/modernizr.js');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery.cookie.js');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery.flatelements.js');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery.placeholder.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/bootstrap.min.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/modernizr.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.cookie.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.flatelements.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.placeholder.js');
         ?>
 
         <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
