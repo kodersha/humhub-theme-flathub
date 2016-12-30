@@ -2,7 +2,7 @@
 
 	<!-- STYLE -->
 
-	<link href="<?php echo $this->theme->getBaseUrl().'/css/orbit.css'; ?>" rel="stylesheet">
+	<link href="<?php echo $this->theme->getBaseUrl() . '/css/orbit.css'; ?>" rel="stylesheet">
 	
 	<!-- BLOCK -->
 
@@ -16,12 +16,12 @@
 			--> 
 			
 			<div id="featured"> 
-				<img src="<?php echo $this->theme->getBaseUrl().'/img/orbit/banner/1.jpg'; ?>" rel="caption-1" />
+				<img src="<?php echo $this->theme->getBaseUrl() . '/img/orbit/banner/1.jpg'; ?>" rel="caption-1" />
 				<a href="http://humhub.com" target="_blank">
-					<img src="<?php echo $this->theme->getBaseUrl().'/img/orbit/banner/2.jpg'; ?>" rel="caption-2" />
+					<img src="<?php echo $this->theme->getBaseUrl() . '/img/orbit/banner/2.jpg'; ?>" rel="caption-2" />
 				</a>
-				<img src="<?php echo $this->theme->getBaseUrl().'/img/orbit/banner/3.jpg'; ?>" rel="caption-3" />
-				<img src="<?php echo $this->theme->getBaseUrl().'/img/orbit/banner/4.jpg'; ?>"  rel="caption-4" />
+				<img src="<?php echo $this->theme->getBaseUrl() . '/img/orbit/banner/3.jpg'; ?>" rel="caption-3" />
+				<img src="<?php echo $this->theme->getBaseUrl() . '/img/orbit/banner/4.jpg'; ?>"  rel="caption-4" />
 			</div>
 			
 			<!-- CAPTIONS -->
@@ -34,7 +34,7 @@
 
 	<!-- JAVASCRIPT -->
 		
-	<script src="<?php echo $this->theme->getBaseUrl().'/js/jquery.orbit.min.js'; ?>"></script>	
+	<script src="<?php echo $this->theme->getBaseUrl() . '/js/jquery.orbit.min.js'; ?>"></script>	
 	<script type="text/javascript">
 		$(window).load(function() {
 			$('#featured').orbit({
