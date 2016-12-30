@@ -81,7 +81,7 @@ AppAsset::register($this);
 
     <body>
 	
-	<script src="<?php echo $this->theme->getBaseUrl() . '/js/lightbox-plus-jquery.min.js'; ?>"></script>
+	<script src="<?php echo $this->theme->getBaseUrl().'/js/lightbox-plus-jquery.min.js'; ?>"></script>
 	
     <?php $this->beginBody() ?>
 	
@@ -119,8 +119,11 @@ AppAsset::register($this);
     <!-- start: show content (and check, if exists a sublayout -->
     <?php if (isset($this->context->subLayout) && $this->context->subLayout != "") : ?>
         <?php echo $this->render($this->context->subLayout, array('content' => $content)); ?>
-    <?php else: ?>
-        <?php echo $content; ?>
+    <?php else {
+    : ?>
+        <?php echo $content;
+}
+?>
     <?php endif; ?>
     <!-- end: show content -->
 
@@ -150,7 +153,7 @@ AppAsset::register($this);
 		</div>
 	</div>
 
-	<script src="<?php echo $this->theme->getBaseUrl() . '/js/plugins-scroll.js'; ?>"></script>
+	<script src="<?php echo $this->theme->getBaseUrl().'/js/plugins-scroll.js'; ?>"></script>
 	<script>
 	$(document).ready(function() {
 		try {

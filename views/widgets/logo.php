@@ -9,7 +9,7 @@ use yii\helpers\Html;
     <?php endif; ?>
     <a class="navbar-brand" style="<?php if ($logo->hasImage()) : ?>display:none;<?php endif; ?> "
        href="<?php echo Yii::$app->homeUrl; ?>" id="text-logo">
-			<!-- <img src="<?php echo $this->theme->getBaseUrl() . '/img/logo.png'; ?>"></img> -->
+			<!-- <img src="<?php echo $this->theme->getBaseUrl().'/img/logo.png'; ?>"></img> -->
 			<?php echo Html::encode(Yii::$app->name); ?>
     </a>
 <?php endif; ?>
@@ -20,7 +20,10 @@ use yii\helpers\Html;
             <img src="<?php echo $logo->getUrl(); ?>" id="img-logo"/>
         </a>
         <br>
-    <?php else: ?>
-        <h1 id="app-title" class="animated fadeIn"><a href="<?php echo Yii::$app->homeUrl; ?>"><?php echo Html::encode(Yii::$app->name); ?></a></h1>
+    <?php else {
+    : ?>
+        <h1 id="app-title" class="animated fadeIn"><a href="<?php echo Yii::$app->homeUrl;
+}
+?>"><?php echo Html::encode(Yii::$app->name); ?></a></h1>
     <?php endif; ?>
 <?php endif; ?>
