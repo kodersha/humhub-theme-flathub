@@ -40,7 +40,7 @@ class ProfileMenu extends \humhub\widgets\BaseMenu
             'isActive' => (Yii::$app->controller->id == "profile" && Yii::$app->controller->action->id == "index"),
         ));
 
-            if (Yii::$app->getController()->getUser()->profile->about != "") {
+          if (Yii::$app->getController()->getUser()->profile->about != "") {
         $this->addItem(array(
             'label' => Yii::t('UserModule.widgets_ProfileMenuWidget', 'About'),
             'group' => 'profile',
@@ -48,7 +48,7 @@ class ProfileMenu extends \humhub\widgets\BaseMenu
             'sortOrder' => 300,
             'isActive' => (Yii::$app->controller->id == "profile" && Yii::$app->controller->action->id == "about"),
         ));
-            }
+          }
 
         parent::init();
     }

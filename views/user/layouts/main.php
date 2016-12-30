@@ -64,8 +64,8 @@ AppAsset::register($this);
 		<div id="trailer" class="is_overlay">
 			<div class="is_frame"></div>
 			<video id="video" width="100%" height="auto" autoplay="autoplay" muted="" loop="loop" preload="auto">
-				<source src="<?php echo $this->theme->getBaseUrl().'/video/intro.mp4'; ?>"></source>
-				<source src="<?php echo $this->theme->getBaseUrl().'/video/intro.webm'; ?>" type="video/webm"></source>
+				<source src="<?php echo $this->theme->getBaseUrl() . '/video/intro.mp4'; ?>"></source>
+				<source src="<?php echo $this->theme->getBaseUrl() . '/video/intro.webm'; ?>" type="video/webm"></source>
 			</video>
 		</div>
 		
@@ -81,11 +81,8 @@ AppAsset::register($this);
         <!-- start: show content (and check, if exists a sublayout -->
         <?php if (isset($this->subLayout) && $this->subLayout != "") : ?>
             <?php echo $this->renderPartial($this->subLayout, array('content' => $content)); ?>
-        <?php else {
-    : ?>
-            <?php echo $content;
-}
-?>
+        <?php else: ?>
+            <?php echo $content; ?>
         <?php endif; ?>
         <!-- end: show content -->
 

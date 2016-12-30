@@ -12,7 +12,7 @@ $object = $this->context->object;
     <div class="post-files" data-layout="<?php echo $object->getUniqueId(); ?>" data-id="photoset-<?php echo $object->getUniqueId(); ?>">
         <?php foreach ($files as $file) : ?>
             <?php if ($file->getMimeBaseType() == "image") : ?>
-                <a class="image-grid <?php if (count($files) < 3) { echo "half"; } ?> <?php if (count($files) < 2) { echo "full"; } ?>" data-lightbox="<?php if (count($files) > 0) { echo "image-".$object->getUniqueId(); } ?>" href="<?php echo $file->getUrl(); ?>#.jpeg">
+                <a class="image-grid <?php if (count($files) < 3) { echo "half"; } ?> <?php if (count($files) < 2) { echo "full"; } ?>" data-lightbox="<?php if (count($files) > 0) { echo "image-" . $object->getUniqueId(); } ?>" href="<?php echo $file->getUrl(); ?>#.jpeg">
                     <img src="<?php echo $file->getUrl(); ?>#.jpeg" data-highres="<?php echo $file->getUrl(); ?>#.jpeg">
                 </a> 
             <?php endif; ?>
@@ -23,9 +23,8 @@ $object = $this->context->object;
     <ul class="files" style="list-style: none; margin: 0;" id="files-<?php echo $object->getPrimaryKey(); ?>">
         <?php foreach ($files as $file) : ?>
             <?php
-            if ($file->getMimeBaseType() == "image" && $hideImageFileInfo) {
-                            continue;
-            }
+            if ($file->getMimeBaseType() == "image" && $hideImageFileInfo)
+                continue;
             ?>
             <li class="mime <?php echo \humhub\libs\MimeHelper::getMimeIconClassByExtension($file->getExtension()); ?>"><a
                     href="<?php echo $file->getUrl(); ?>" target="_blank"><span
