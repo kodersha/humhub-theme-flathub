@@ -17,6 +17,14 @@ FlatHub - light flat theme for HumHub
 - Slider block
 - More changes
 
+## Screenshots
+![](https://github.com/Felli/humhub-themes-flathub/blob/master/screenshots/1.png)
+![](https://github.com/Felli/humhub-themes-flathub/blob/master/screenshots/2.png)
+![](https://github.com/Felli/humhub-themes-flathub/blob/master/screenshots/3.png)
+![](https://github.com/Felli/humhub-themes-flathub/blob/master/screenshots/4.png)
+![](https://github.com/Felli/humhub-themes-flathub/blob/master/screenshots/5.png)
+![](https://github.com/Felli/humhub-themes-flathub/blob/master/screenshots/main.png)
+
 ## Install
 - Extract archive and rename to FlatHub.
 - Put folder in: yousite.com/themes
