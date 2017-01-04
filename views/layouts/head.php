@@ -6,6 +6,7 @@
 <!-- JS -->
 
 <script src="<?php echo $this->theme->getBaseUrl() . '/js/styleswitch.js'; ?>"></script>
+<script src="<?php echo $this->theme->getBaseUrl() . '/js/scollme.js'; ?>"></script>
 
 <!-- OTHER --> 
 
