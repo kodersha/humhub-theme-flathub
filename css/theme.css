@@ -2941,6 +2941,8 @@ img.bounceIn {
 		color: #fff !important;
 	}
 	.layout-sidebar-container #share-panel {
+		display: none;		
+ -	}
 }
 .onoffswitch-inner:before {
     background-color: #adc;
