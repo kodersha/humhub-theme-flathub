@@ -121,7 +121,27 @@ h4 {
     line-height: 1.4;
 }
 .text-center {
-    text-align: center !important;
+    * { text-align:center; }
+
+.wrapper
+{
+  max-width:30em;
+  margin:2em auto;
+}
+
+.scrollme
+{
+  padding:2em;
+  border:1em solid #e8e8e8;
+  perspective:600px;
+}
+
+.animateme
+{
+  width:80%;
+  padding:10%;
+  background:#e8e8e8;
+  transform-origin:center center center;
 }
 input[type=text], input[type=password], input[type=select] {
     -webkit-appearance: none;
@@ -2921,8 +2941,6 @@ img.bounceIn {
 		color: #fff !important;
 	}
 	.layout-sidebar-container #share-panel {
-		display: none;
-	}
 }
 .onoffswitch-inner:before {
     background-color: #adc;
