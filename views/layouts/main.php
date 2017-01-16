@@ -15,6 +15,7 @@ AppAsset::register($this);
         <!-- start: Meta -->
         <meta charset="utf-8">
         <title><?php echo $this->pageTitle; ?></title>
+        <meta name="description" content="FYV - A simply elegant social networking site, for all those that wish to join it.">
         <!-- end: Meta -->
 
         <!-- start: Mobile Specific -->
@@ -27,14 +28,7 @@ AppAsset::register($this);
         <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
         <script src="<?php echo Yii::getAlias(" @web"); ?>/js/html5shiv.js"></script>
-        <
-        link
-        id = "ie-style"
-        href = "<?php echo Yii::getAlias("
-        @
-        web
-        "); ?>/css/ie.css"
-        rel = "stylesheet" >
+        <link id = "ie-style" href = "<?php echo Yii::getAlias("@web"); ?>/css/ie.css rel = "stylesheet" >
         <![endif]-->
 
         <!--[if IE 9]>
@@ -161,8 +155,18 @@ AppAsset::register($this);
 		} catch(err) {
 		};
 	});
+	</script>
+        <script>
+	$(document).ready(function() {
+		try {
+			$.browserSelector();
+			if($("html").hasClass("chrome")) {
+				$.smoothScroll();
+			}
+		} catch(err) {
+		};
+	});
 	</script> 
-	
     </body>
     </html>
 <?php $this->endPage() ?>
