@@ -23,8 +23,9 @@ $object = $this->context->object;
     <ul class="files" style="list-style: none; margin: 0;" id="files-<?php echo $object->getPrimaryKey(); ?>">
         <?php foreach ($files as $file) : ?>
             <?php
-            if ($file->getMimeBaseType() == "image" && $hideImageFileInfo)
-                continue;
+            if ($file->getMimeBaseType() == "image" && $hideImageFileInfo) {
+                            continue;
+            }
             ?>
             <li class="mime <?php echo \humhub\libs\MimeHelper::getMimeIconClassByExtension($file->getExtension()); ?>"><a
                     href="<?php echo $file->getUrl(); ?>" target="_blank"><span
