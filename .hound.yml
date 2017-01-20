@@ -1,0 +1,7 @@
+# .hound.yml
+ 
+ scss:
+   enabled: false
+ 
+ jshint:
+   config_file: .jshintrc
