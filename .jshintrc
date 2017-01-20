@@ -1,0 +1,4 @@
+# .jshintrc
+ 
+ jshint:
+   config_file: .jshintrc
