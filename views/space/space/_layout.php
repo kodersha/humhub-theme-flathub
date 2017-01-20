@@ -14,10 +14,13 @@ $space = $this->context->contentContainer;
             <div class="col-md-12 layout-content-container">
                 <?php echo $content; ?>
             </div>
-        <?php else: ?>
+        <?php else {
+    : ?>
             <div class="col-md-4 layout-sidebar-container">
 				<div class="panel-light no-icons">
-					<?php echo \humhub\modules\space\widgets\Menu::widget(['space' => $space]); ?>
+					<?php echo \humhub\modules\space\widgets\Menu::widget(['space' => $space]);
+}
+?>
 				</div>
                 <?php
                 echo \humhub\modules\space\widgets\Sidebar::widget(['space' => $space, 'widgets' => [

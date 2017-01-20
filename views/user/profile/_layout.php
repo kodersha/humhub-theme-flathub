@@ -12,10 +12,13 @@ $user = $this->context->getUser();
             <div class="col-md-12 layout-content-container">
                 <?php echo $content; ?>
             </div>
-        <?php else: ?>
+        <?php else {
+    : ?>
 			<div class="col-md-4 layout-sidebar-container">
 				<div class="panel-light">
-					<?= \humhub\modules\user\widgets\ProfileMenu::widget(['user' => $this->context->user]); ?>
+					<?= \humhub\modules\user\widgets\ProfileMenu::widget(['user' => $this->context->user]);
+}
+?>
                 </div>
 				<?php
                 echo \humhub\modules\user\widgets\ProfileSidebar::widget([

@@ -10,13 +10,15 @@ use yii\helpers\Url;
        class=""
        title="" data-target="#globalModal"
        data-original-title="Comments">Comments - <?php echo $this->context->getCommentsCount(); ?></a>
-<?php else: ?>
+<?php else {
+    : ?>
 	<div class="pull-right">
     <?php
     if (Yii::$app->user->isGuest) {
         echo Html::a(Yii::t('CommentModule.widgets_views_link', "<i class='fa fa-comments-o'></i>"), Yii::$app->user->loginUrl, array('data-target' => '#globalModal'));
+}
     } else {
-        echo Html::a(Yii::t('CommentModule.widgets_views_link', "<i class='fa fa-comments-o'></i>"), "#", array('onClick' => "$('#comment_" . $id . "').show();$('#newCommentForm_" . $id . "_contenteditable').focus();return false;"));
+        echo Html::a(Yii::t('CommentModule.widgets_views_link', "<i class='fa fa-comments-o'></i>"), "#", array('onClick' => "$('#comment_".$id."').show();$('#newCommentForm_".$id."_contenteditable').focus();return false;"));
     }
     ?>
 	</div>

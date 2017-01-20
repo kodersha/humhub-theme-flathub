@@ -24,16 +24,16 @@ $canDelete = $comment->canDelete();
 						<?php if ($canWrite): ?>
 							<li>
 								<?php
-								echo AjaxButton::widget([
-									'label' => '<i class="fa fa-pencil"></i> ' . Yii::t('CommentModule.widgets_views_showComment', 'Edit'),
-									'ajaxOptions' => [
-										'type' => 'POST',
-										'success' => new yii\web\JsExpression("function(html){ $('.preferences .dropdown').removeClass('open'); $('#comment_editarea_" . $comment->id . "').replaceWith(html); $('#comment_input_" . $comment->id . "_contenteditable').focus(); }"),
-										'url' => Url::to(['/comment/comment/edit', 'contentModel' => $comment->object_model, 'contentId' => $comment->object_id, 'id' => $comment->id]),
-									],
-									'tag' => 'a'
-								]);
-								?>
+                                echo AjaxButton::widget([
+                                    'label' => '<i class="fa fa-pencil"></i> ' . Yii::t('CommentModule.widgets_views_showComment', 'Edit'),
+                                    'ajaxOptions' => [
+                                        'type' => 'POST',
+                                        'success' => new yii\web\JsExpression("function(html){ $('.preferences .dropdown').removeClass('open'); $('#comment_editarea_" . $comment->id . "').replaceWith(html); $('#comment_input_" . $comment->id . "_contenteditable').focus(); }"),
+                                        'url' => Url::to(['/comment/comment/edit', 'contentModel' => $comment->object_model, 'contentId' => $comment->object_id, 'id' => $comment->id]),
+                                    ],
+                                    'tag' => 'a'
+                                ]);
+                                ?>
 
 							</li>
 						<?php endif; ?>
@@ -43,18 +43,18 @@ $canDelete = $comment->canDelete();
 
 								<!-- load modal confirm widget -->
 								<?php
-								echo humhub\widgets\ModalConfirm::widget(array(
-									'uniqueID' => 'modal_commentdelete_' . $comment->id,
-									'linkOutput' => 'a',
-									'title' => Yii::t('CommentModule.widgets_views_showComment', '<strong>Confirm</strong> comment deleting'),
-									'message' => Yii::t('CommentModule.widgets_views_showComment', 'Do you really want to delete this comment?'),
-									'buttonTrue' => Yii::t('CommentModule.widgets_views_showComment', 'Delete'),
-									'buttonFalse' => Yii::t('CommentModule.widgets_views_showComment', 'Cancel'),
-									'linkContent' => '<i class="fa fa-trash-o"></i> ' . Yii::t('CommentModule.widgets_views_showComment', 'Delete'),
-									'linkHref' => Url::to(["/comment/comment/delete", 'contentModel' => $comment->object_model, 'contentId' => $comment->object_id, 'id' => $comment->id]),
-									'confirmJS' => "function(html) { $('#comment_" . $comment->id . "').slideUp(); }"
-								));
-								?>
+                                echo humhub\widgets\ModalConfirm::widget(array(
+                                    'uniqueID' => 'modal_commentdelete_' . $comment->id,
+                                    'linkOutput' => 'a',
+                                    'title' => Yii::t('CommentModule.widgets_views_showComment', '<strong>Confirm</strong> comment deleting'),
+                                    'message' => Yii::t('CommentModule.widgets_views_showComment', 'Do you really want to delete this comment?'),
+                                    'buttonTrue' => Yii::t('CommentModule.widgets_views_showComment', 'Delete'),
+                                    'buttonFalse' => Yii::t('CommentModule.widgets_views_showComment', 'Cancel'),
+                                    'linkContent' => '<i class="fa fa-trash-o"></i> ' . Yii::t('CommentModule.widgets_views_showComment', 'Delete'),
+                                    'linkHref' => Url::to(["/comment/comment/delete", 'contentModel' => $comment->object_model, 'contentId' => $comment->object_id, 'id' => $comment->id]),
+                                    'confirmJS' => "function(html) { $('#comment_" . $comment->id . "').slideUp(); }"
+                                ));
+                                ?>
 							</li>
 						<?php endif; ?>
 					</ul>

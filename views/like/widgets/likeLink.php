@@ -9,8 +9,11 @@ $this->registerJsFile('@web/resources/like/like.js', ['position' => humhub\compo
 
     <?php if (Yii::$app->user->isGuest): ?>
         <?php echo Html::a(Yii::t('LikeModule.widgets_views_likeLink', '<i class="fa fa-heart-o"></i>'), Yii::$app->user->loginUrl, array('data-target' => '#globalModal')); ?>
-    <?php else: ?>
-        <?php echo Html::a(Yii::t('LikeModule.widgets_views_likeLink', '<i class="fa fa-thumbs-o-up"></i>'), $likeUrl, ['style' => 'display:' . ((!$currentUserLiked) ? 'inline' : 'none'), 'class' => 'like likeAnchor', 'data-objectId' => $id]); ?>
+    <?php else {
+    : ?>
+        <?php echo Html::a(Yii::t('LikeModule.widgets_views_likeLink', '<i class="fa fa-thumbs-o-up"></i>'), $likeUrl, ['style' => 'display:' . ((!$currentUserLiked) ? 'inline' : 'none'), 'class' => 'like likeAnchor', 'data-objectId' => $id]);
+}
+?>
         <?php echo Html::a(Yii::t('LikeModule.widgets_views_likeLink', '<i class="fa fa-thumbs-o-up"></i>'), $unlikeUrl, ['style' => 'display:' . (($currentUserLiked) ? 'inline' : 'none'), 'class' => 'unlike likeAnchor', 'data-objectId' => $id]); ?>
     <?php endif; ?>
 
