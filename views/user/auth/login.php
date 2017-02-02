@@ -1,12 +1,12 @@
 <?php
 use \yii\helpers\Url;
+use \humhub\compat\Html;
 use yii\widgets\ActiveForm;
-use \humhub\compat\CHtml;
 $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
 ?>
  
 <div class="container" style="text-align: center;">
-    <?= humhub\widgets\SiteLogo::widget(['place' => 'login']); ?>
+    <?php echo humhub\widgets\SiteLogo::widget(['place' => 'login']); ?>
     <br>
 
     <div class="panel panel-default animated bounceIn" id="login-form"
@@ -25,7 +25,7 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
             <hr>
             <div class="row">
                 <div class="col-md-4">
-                    <?php echo CHtml::submitButton(Yii::t('UserModule.views_auth_login', 'Sign in'), array('id' => 'login-button', 'class' => 'btn btn-large btn-primary')); ?>
+                    <?php echo Html::submitButton(Yii::t('UserModule.views_auth_login', 'Sign in'), array('id' => 'login-button', 'class' => 'btn btn-large btn-primary')); ?>
                 </div>
                 <div class="col-md-8 text-right">
                     <small>
@@ -57,7 +57,7 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
 
                 <?php echo $form->field($invite, 'email')->textInput(['id' => 'register-email', 'placeholder' => $invite->getAttributeLabel('email')])->label(false); ?>
                 <hr>
-                <?php echo CHtml::submitButton(Yii::t('UserModule.views_auth_login', 'Register'), array('class' => 'btn btn-primary')); ?>
+                <?php echo Html::submitButton(Yii::t('UserModule.views_auth_login', 'Register'), array('class' => 'btn btn-primary')); ?>
 
                 <?php ActiveForm::end(); ?>
             </div>
