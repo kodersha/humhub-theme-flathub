@@ -147,7 +147,6 @@ AppAsset::register($this);
 		</div>
 	</div>
 
-	<script src="<?php echo $this->theme->getBaseUrl().'/js/plugins-scroll.js'; ?>"></script>
 	<script>
 	$(document).ready(function() {
 		try {
@@ -159,17 +158,6 @@ AppAsset::register($this);
 		};
 	});
 	</script>
-        <script>
-	$(document).ready(function() {
-		try {
-			$.browserSelector();
-			if($("html").hasClass("chrome")) {
-				$.smoothScroll();
-			}
-		} catch(err) {
-		};
-	});
-	</script> 
     </body>
     </html>
 <?php $this->endPage() ?>
