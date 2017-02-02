@@ -1,14 +1,14 @@
-<!-- MAIN STYLE -->
-
+<!-- start: CSS -->
 <link rel="stylesheet" type="text/css" media="screen" title="white-theme" href="<?php echo $this->theme->getBaseUrl().'/css/theme.css'; ?>">
 <link rel="alternate stylesheet" type="text/css" media="screen" title="dark-theme" href="<?php echo $this->theme->getBaseUrl().'/css/dark.css'; ?>">
+<!-- end: CSS -->
 
-<!-- JS -->
-
+<!-- start: JS -->
 <script src="<?php echo $this->theme->getBaseUrl().'/js/styleswitch.js'; ?>"></script>
 <script src="<?php echo $this->theme->getBaseUrl().'/js/scollme.js'; ?>"></script>
+<!-- end: JS -->
 
-<!-- OTHER --> 
-
+<!-- start: OTHER --> 
 <link href="<?php echo $this->theme->getBaseUrl().'/css/lightbox.css'; ?>" rel="stylesheet">
 <link href="https//fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Rancho|Ubuntu+Condensed&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+<!-- end: OTHER -->
