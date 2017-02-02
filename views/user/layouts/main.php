@@ -1,8 +1,11 @@
 <?php
+
 use yii\helpers\Html;
 use humhub\assets\AppAsset;
+
 /* @var $this \yii\web\View */
 /* @var $content string */
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -18,7 +21,7 @@ AppAsset::register($this);
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <!-- end: Mobile Specific -->
-        <?= Html::csrfMetaTags() ?>
+        <?php echo Html::csrfMetaTags() ?>
         <?php $this->head() ?>
 
         <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -94,9 +97,8 @@ AppAsset::register($this);
             $('body').find(':checkbox, :radio').flatelements();
         </script>
 
-        <?php echo HSetting::GetText('trackingHtmlCode'); ?>
-        <?php $this->endBody() ?>
+        <?php echo \humhub\models\Setting::GetText('trackingHtmlCode'); ?>
+    <?php $this->endBody() ?>
     </body>
-
 </html>
 <?php $this->endPage() ?>
