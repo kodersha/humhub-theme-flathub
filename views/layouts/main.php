@@ -15,7 +15,7 @@ AppAsset::register($this);
         <!-- start: Meta -->
         <meta charset="utf-8">
         <title><?php echo $this->pageTitle; ?></title>
-        <meta name="description" content="FYV - A simply elegant social networking site, for all those that wish to join it.">
+        <meta name="description" content="SITENAME - SITE_DESCRIPTION.">
         <!-- end: Meta -->
 
         <!-- start: Mobile Specific -->
