@@ -4,7 +4,7 @@ $user = $this->context->getUser();
 <div class="container profile-layout-container">
     <div class="row"> 
         <div class="col-md-12">
-            <?= \humhub\modules\user\widgets\ProfileHeader::widget(['user' => $user]); ?>
+            <?php echo \humhub\modules\user\widgets\ProfileHeader::widget(['user' => $user]); ?>
         </div>
     </div>
     <div class="row">
@@ -16,7 +16,7 @@ $user = $this->context->getUser();
     : ?>
 			<div class="col-md-4 layout-sidebar-container">
 				<div class="panel-light">
-					<?= \humhub\modules\user\widgets\ProfileMenu::widget(['user' => $this->context->user]);
+					<?php echo \humhub\modules\user\widgets\ProfileMenu::widget(['user' => $this->context->user]);
 }
 ?>
                 </div>
