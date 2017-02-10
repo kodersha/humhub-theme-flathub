@@ -4,10 +4,11 @@
 #  [HumHub](https://github.com/humhub/humhub) Themes FlatHub
 
 ## Discription
-FlatHub - light flat theme for HumHub
+FlatHub - Flat theme for HumHub
+> Notice: This theme only works with v1.1.2 of Humhub, please check [here](https://github.com/GreenVolume/humhub-themes-flathub/tree/v1.2) for the v1.2 updates. 
 
 ## Features
-- Light flat design
+- Flat design
 - Style switcher
 - Sidebar left position
 - Custom main menu
