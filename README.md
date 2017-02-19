@@ -1,6 +1,6 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GreenVolume/humhub-themes-flathub/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GreenVolume/humhub-themes-flathub/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/GreenVolume/humhub-themes-flathub/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GreenVolume/humhub-themes-flathub/build-status/master)
-[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/) [![Join the chat at https://gitter.im/GVHub/Lobby](https://badges.gitter.im/GVHub/Lobby.svg)](https://gitter.im/GVHub/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 #  [HumHub](https://github.com/humhub/humhub) Themes FlatHub
 
 ## Discription
