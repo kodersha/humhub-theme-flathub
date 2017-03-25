@@ -31,4 +31,4 @@ If you want help author to buy pizzas.
 Webmoney
 
 ## Author
-Alexandra Travkina - [thrashed.ru](http://thrashed.ru)
+Alexandra Travkina - [thrashed.ru](http://milkleaks.ru)
