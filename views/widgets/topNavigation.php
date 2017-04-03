@@ -1,14 +1,29 @@
 <?php
 
 use yii\helpers\Html;
-use yii\helpers\Url;
 ?>
+<?php foreach ($this->context->getItems() as $item) : ?>
+    <li class="visible-md visible-lg <?php if ($item['isActive']): ?>active<?php endif; ?> <?php
+    if (isset($item['id'])) {
+        echo $item['id'];
+    }
+    ?>">
+            <?= Html::a($item['icon'] . "<br />" . $item['label'], $item['url'], $item['htmlOptions']); ?>
+    </li>
+<?php endforeach; ?>
 
-<div class="panel panel-default panel-light">
-	<div class="panel-heading"><?php echo Yii::t('base', "Menu"); ?></div>
-	<div class="list-group dashboard-menu-item">
-		<?php foreach ($this->context->getItems() as $item) : ?>
-			<?php echo Html::a("<span>".$item['label']."</span>", $item['url'], $item['htmlOptions']); ?>
-		<?php endforeach; ?>
-	</div>
-</div>
+<li class="dropdown visible-xs visible-sm">
+    <a href="#" id="top-dropdown-menu" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-align-justify"></i><br>
+        <?= Yii::t('base', 'Menu'); ?>
+        <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+
+        <?php foreach ($this->context->getItems() as $item) : ?>
+            <li class="<?php if ($item['isActive']): ?>active<?php endif; ?>">
+                <?= Html::a($item['label'], $item['url'], $item['htmlOptions']); ?>
+            </li>
+        <?php endforeach; ?>
+
+    </ul>
+</li>
