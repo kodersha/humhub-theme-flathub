@@ -1,13 +1,21 @@
+<?php
+
+use humhub\modules\directory\widgets\Menu;
+use humhub\modules\directory\widgets\Sidebar;
+
+\humhub\assets\JqueryKnobAsset::register($this);
+?>
+
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
-			<div class="panel-light">
-				<?= humhub\modules\directory\widgets\Menu::widget(); ?>
-			</div>
-            <?php echo \humhub\modules\directory\widgets\Sidebar::widget(); ?>
-        </div>	
-        <div class="col-md-8 panel-hidden">
-            <?php echo $content; ?> 
+        <div class="col-md-2">
+            <?= Menu::widget(); ?>
+        </div>
+        <div class="col-md-7">
+            <?= $content; ?>
+        </div>
+        <div class="col-md-3">
+            <?= Sidebar::widget(); ?>
         </div>
     </div>
 </div>
