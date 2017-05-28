@@ -12,11 +12,11 @@ use humhub\widgets\AjaxButton;
                 'label' => Yii::t('CommentModule.widgets_views_comments', 'Show all {total} comments.', array('{total}' => $total)),
                 'ajaxOptions' => [
                     'type' => 'POST',
-                    'success' => new yii\web\JsExpression("function(html) { $('#comments_area_" . $id . "').html(html); }"),
+                    'success' => new yii\web\JsExpression("function(html) { $('#comments_area_".$id."').html(html); }"),
                     'url' => Url::to(['/comment/comment/show', 'contentModel' => $modelName, 'contentId' => $modelId]),
                 ],
                 'htmlOptions' => [
-                    'id' => $id . "_showAllLink",
+                    'id' => $id."_showAllLink",
                     'class' => 'show show-all-link'
                 ],
                 'tag' => 'a'
