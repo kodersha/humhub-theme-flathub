@@ -1,4 +1,5 @@
 #  [HumHub](https://github.com/humhub/humhub) Themes FlatHub
+**Outdated and does not supported**
 
 ## Discription
 FlatHub - light flat theme for HumHub
